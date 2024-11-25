@@ -3,34 +3,24 @@
 # │  used properties are included. For a list of all supported properties and their functions,     │
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: no.ehr.core
+id: hl7.fhir.no.domain.ehr.core
 canonical: https://github.com/oslokommune/Pasientjournal-API
-name: no-ehr-core
-# title: Example Title
-# description: Example Implementation Guide for getting started with SUSHI
+name: NoDomainEHRCore
+title: NO Domain Core EHR API
+description: Implementation Guide for core API to interact with EHR systems in Norwegian primary healthcare services
 status: draft # draft | active | retired | unknown
 version: 0.1.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2024+
 releaseLabel: ci-build
-# license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
-# jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
+
 publisher:
   name: Oslo Origo - Oslo kommune
   url: https://labs.oslo.kommune.no/
   # email: test@example.org
 
-# The dependencies property corresponds to IG.dependsOn. The key is the
-# package id and the value is the version (or dev/current). For advanced
-# use cases, the value can be an object with keys for id, uri, and version.
-#
-# dependencies:
-#   hl7.fhir.us.core: 3.1.0
-#   hl7.fhir.us.mcode:
-#     id: mcode
-#     uri: http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode
-#     version: 1.0.0
-#
+dependencies:
+  hl7.fhir.no.basis: 2.2.0
 #
 # The pages property corresponds to IG.definition.page. SUSHI can
 # auto-generate the page list, but if the author includes pages in
@@ -43,6 +33,13 @@ publisher:
 # with supported extensions (e.g., .md/.xml) will be treated as
 # sub-pages.
 #
+pages:
+  index.md:
+    title: Home
+  api.md:
+    title: API Documentation
+    Patient.md:
+      title: Patient API
 # pages:
 #   index.md:
 #     title: Example Home
