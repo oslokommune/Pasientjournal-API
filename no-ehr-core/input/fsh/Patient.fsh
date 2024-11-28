@@ -1,4 +1,5 @@
 Profile: NoEHRCorePatient
 Parent: NoBasisPatient
-Title: "no-domain-ehr-core-Patient"
+Id: no-ehr-core-patient
+Title: "no-ehr-core-patient"
 Description: "A Patient profile extending the no-basis-Patient profile for Norwegian EHR systems."

@@ -20,7 +20,9 @@ publisher:
   # email: test@example.org
 
 dependencies:
-  hl7.fhir.no.basis: 2.2.0
+  hl7.fhir.no.basis: 
+    id: nobasis
+    version: 2.2.0
 #
 # The pages property corresponds to IG.definition.page. SUSHI can
 # auto-generate the page list, but if the author includes pages in
@@ -36,13 +38,29 @@ dependencies:
 pages:
   index.md:
     title: Home
+  conformance.md:
+    title: Conformance  
   api.md:
     title: API Documentation
-    Patient.md:
-      title: Patient API
-    Practitioner.md:
-      title: Practitioner API
-
+    appointmentOps.md:
+      title:  Appointment operations
+    carePlanOps.md:
+      title: CarePlan operations
+    compositionOps.md:
+      title: Composition operations
+    documentReferenceOps.md:
+      title: DocumentReference operations
+    encounterOps.md:
+      title: Encounter operations
+    locationOps.md:
+      title: Location operations
+    observationOps.md:
+      title: Observation operations
+    patientOps.md:
+      title: Patient operations
+    practitionerOps.md:
+      title: Practitioner operations
+    
 # pages:
 #   index.md:
 #     title: Example Home
@@ -76,9 +94,19 @@ pages:
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
-  Artifacts: artifacts.html
-  API: api.html
-
+  Conformance: conformance.html
+  FHIR Profiles: artifacts.html
+  API: 
+    General: api.html
+    Appointment: appointmentOps.html
+    CarePlan: carePlanOps.html
+    Composition: compositionOps.html
+    Document Reference: documentReferenceOps.html
+    Encounter: encounterOps.html
+    Location: locationOps.html
+    Patient: patientOps.html
+    Practitioner: practitionerOps.html
+    
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │
 # │  resource. These properties are less commonly needed than those above.                         │
