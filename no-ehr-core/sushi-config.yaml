@@ -40,6 +40,9 @@ pages:
     title: API Documentation
     Patient.md:
       title: Patient API
+    Practitioner.md:
+      title: Practitioner API
+
 # pages:
 #   index.md:
 #     title: Example Home
@@ -74,6 +77,7 @@ pages:
 menu:
   Home: index.html
   Artifacts: artifacts.html
+  API: api.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │
