@@ -1,0 +1,42 @@
+name: publish-gh-pages
+
+on:
+  workflow_dispatch:
+
+env:
+  IG: no-ehr-core
+
+# The following jobs are equal for all IGs and can be moved to a common composite-action if 'uses'-support is added, see:
+# https://github.com/actions/runner/blob/main/docs/adrs/1144-composite-actions.md
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    container: hl7fhir/ig-publisher-base:latest 
+    steps:
+      - uses: actions/checkout@v3    
+      - name: Install hl7.fhir.no.basis-2.2.0-snapshots in local cache and run IG Publisher
+        run: |
+          echo "NPM install fhir r4 core 4.0.1 from package registry"
+          npm --registry https://packages.simplifier.net install hl7.fhir.r4.core@4.0.1
+          echo "NPM install fhir no-basis220 from local tgz"
+          npm install snapshots/hl7.fhir.no.basis-2.2.0-snapshots.tgz
+          echo "Create .fhir packages cache directory for no-basis"
+          mkdir -p /github/home/.fhir/packages/hl7.fhir.no.basis#2.2.0/package
+          echo "Copy local no-basis snapshot to .fhir package cache directory"
+          cp -r ./node_modules/hl7.fhir.no.basis/* /github/home/.fhir/packages/hl7.fhir.no.basis#2.2.0/package 
+          cd ${{ env.IG }}
+          echo "Get latest publisher"
+          curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o ./input-cache/publisher.jar --create-dirs
+          echo "Install Sushi compiler"
+          npm install -g fsh-sushi
+          echo "Run IG publisher"
+          java -jar ./input-cache/publisher.jar publisher -ig ig.ini
+      # Publishes the HTML page to a seperate branch in order to host it using GitHub-Pages.
+      # This will overwrite the currently published HTML page.
+      - name: 🚀 Deploy to GitHub-Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ${{ env.IG }}/output
+          destination_dir: currentbuild
+          commit_message: '${{ env.IG }}: ${{ github.event.head_commit.message }}' 
