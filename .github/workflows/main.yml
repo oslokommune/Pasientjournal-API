@@ -3,6 +3,9 @@ name: publish-gh-pages
 on:
   workflow_dispatch:
 
+permissions: 
+  contents: write  
+
 env:
   IG: no-ehr-core
 
@@ -36,7 +39,7 @@ jobs:
       - name: 🚀 Deploy to GitHub-Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GH_PAT }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ${{ env.IG }}/output
           destination_dir: currentbuild
           commit_message: '${{ env.IG }}: ${{ github.event.head_commit.message }}' 
