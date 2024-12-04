@@ -1,123 +1,66 @@
 ## Patient
 
-API actions related to a [patient](StructureDefinition-NoEHRCorePatient.html)
+API actions related to a [patient](StructureDefinition-no-ehr-core-patient.html')
 
 Category of operations related to patients. A patient is an individual with a unique system ID and typically a national identifier such as F-number, D-number, or a combination of first name/last name and a date of birth. A patient is unique in the context of a medical record system.
 
-### **Search**
-Retrieve a list of patients based on search criteria. Returns 0 to many patients depending on the combination of search parameters. The list contains basic patient information including ID.
+## Must support 
+{::nomarkdown}
+<style>
+    table, th, td {
+        border: 1px solid silver;
+        border-collapse: collapse;
+    }
+</style>
+<table style="width:80%;">
+    <tr>
+        <th>Supported Profiles</th>
+        <th style="width:50%">Search parameters</th>
+        <th>Supported Includes</th>            
+    </tr>
+    <tr>
+        <td><a href="StructureDefinition-no-ehr-core-patient.html">no-ehr-core-patient</a></td>
+        <td>_id, birthdate, death-date, family, gender, given, identifier, name birthdate+name, 
+        family+gender, birthdate+family, gender+name death-date+family   </td>
+        <td></td>
+    </tr>
+</table>
+{:/}
 
-#### **GET**
+### Operations
 
-##### Parameters
+#### Instance Level Interactions	
 
-| Name | Type | Data Type | Description |   
-|------|------|-----------|-------------|   
-|      |      |           |             |   
+| Name | Description |   
+|------|--------------|   
+| [read](https://hl7.org/fhir/R4/http.html#read)	| Read the current state of the resource
+| [update](https://hl7.org/fhir/R4/http.html#update) | Update an existing resource by its id (or create it if it is new)
+| [patch](https://hl7.org/fhir/R4/http.html#patch) | Update an existing resource by posting a set of changes to it
+| [delete](https://hl7.org/fhir/R4/http.html#delete) | Delete a resource
 {:.grid}
 
-##### Responses
+#### Type Level Interactions	
 
-| HTTP Code | Content-Type           | Response                                                                               |   
-|-----------|------------------------|----------------------------------------------------------------------------------------|   
-| `200`     | `application/json`     | `{"content": [` [Bundle](https://hl7.org/fhir/bundle.html) `]}` |   
-| `400`     | `application/json`     | `{"code":"400","message":"Bad Request"}`                                               |   
-| `401`     | `application/json`     | `{"code":"401","message":"Unauthorized"}`                                              |
+| Name | Description |   
+|------|--------------|   
+| [create](https://hl7.org/fhir/R4/http.html#create) | Create a new resource with a server assigned id
+| [search](https://hl7.org/fhir/R4/http.html#search) | Search the resource type based on some filter criteria
 {:.grid}
 
----
 
-#### **POST**
+## May support 
 
-##### Parameters
+#### Instance Level Interactions	
 
-| Name | Type | Data Type | Description |
-|------|------|-----------|-------------|
-|      |      |           |             |
+| Name | Description |   
+|------|--------------|   
+| [vread](https://hl7.org/fhir/R4/http.html#vread)	| Read the state of a specific version of the resource
+| [history](https://hl7.org/fhir/R4/http.html#history) | Retrieve the change history for a particular resource
+{:.grid}
 
-##### Responses
+#### Type Level Interactions	
 
-| HTTP Code | Content-Type           | Response                                                                               |
-|-----------|------------------------|----------------------------------------------------------------------------------------|
-| `200`     | `application/json`     | `{"result": [` [Bundle](https://hl7.org/fhir/bundle.html) `]}` |
-| `400`     | `application/json`     | `{"code":"400","message":"Bad Request"}`                                               |
-| `401`     | `application/json`     | `{"code":"401","message":"Unauthorized"}`                                              |
-
----
-
-### **Read**
-Retrieve personal data and other information related to the patient identified by the ID provided in the request.
-
-#### **GET**
-
-##### Parameters
-
-| Name | Type     | Data Type | Description |
-|------|----------|-----------|-------------|
-| id   | required | uuid      |             |
-
-##### Responses
-
-| HTTP Code | Content-Type           | Response                                                                               |
-| ----------- | ------------------------ | ---------------------------------------------------------------------------------------- |
-| `200`     | `application/json`     | `{"result": ` [Patient](StructureDefinition-NoEHRCorePatient.html) `}` |
-| `400`     | `application/json`     | `{"code":"400","message":"Bad Request"}`                                               |
-| `401`     | `application/json`     | `{"code":"401","message":"Unauthorized"}`                                              |
-
-### **Create**
-Create a new patient with values from the request. A new patient is assigned an ID that is unique to the medical record system. If a patient already exists (based on matching F-number, D-number, or a combination of birth date and first name/last name), no new patient is created.
-
-#### **POST**
-
-##### Parameters
-
-| Name | Type | Data Type | Description |
-| ------ | ------ | ----------- | ------------- |
-|       |       |            |              |
-
-##### Responses
-
-| HTTP Code | Content-Type           | Response                                  |
-|-----------|------------------------|-------------------------------------------|
-| `201`     | `text/plain;charset=UTF-8` |                                           |
-| `400`     | `application/json`     | `{"code":"400","message":"Bad Request"}`  |
-| `401`     | `application/json`     | `{"code":"401","message":"Unauthorized"}` |
-
-### **Update**
-Update a patient with values from the request. The patient is identified by the ID.
-
-#### **PUT**
-
-##### Parameters
-
-| Name | Type     | Data Type | Description |
-|------|----------|-----------|-------------|
-| id   | required | uuid      |             |
-
-##### Responses
-
-| HTTP Code | Content-Type           | Response                                                                               |
-|-----------|------------------------|----------------------------------------------------------------------------------------|
-| `200`     | `text/plain;charset=UTF-8` | `{` [Patient](StructureDefinition-NoEHRCorePatient.html) `}`  |
-| `400`     | `application/json`     | `{"code":"400","message":"Bad Request"}`                                               |
-| `401`     | `application/json`     | `{"code":"401","message":"Unauthorized"}`                                              |
-
----
-
-#### **PATCH**
-
-##### Parameters
-
-| Name | Type     | Data Type | Description |
-|------|----------|-----------|-------------|
-| id   | required | uuid      |             |
-
-##### Responses
-
-| HTTP Code | Content-Type           | Response                                  |
-|-----------|------------------------|-------------------------------------------|
-| `204`     |                        | `NO CONTENT`                              |
-| `400`     | `application/json`     | `{"code":"400","message":"Bad Request"}`  |
-| `401`     | `application/json`     | `{"code":"401","message":"Unauthorized"}` |
-
----
+| Name | Description |   
+|------|--------------|   
+| [history](https://hl7.org/fhir/R4/http.html#history) | Retrieve the change history for a particular resource type
+{:.grid}
