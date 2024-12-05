@@ -19,7 +19,8 @@ jobs:
       - uses: actions/checkout@v3    
       - name: Install hl7.fhir.no.basis-2.2.0-snapshots in local cache and run IG Publisher
         run: |
-          ls -al snapshots
+          echo "ls -al snapshots" 
+          ls -al ../snapshots
           echo "NPM install fhir r4 core 4.0.1 from package registry"
           npm --registry https://packages.simplifier.net install hl7.fhir.r4.core@4.0.1
           echo "NPM install fhir no-basis220 from local tgz"
