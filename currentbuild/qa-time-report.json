@@ -1,0 +1,581 @@
+{
+  "date" : "Thu, 05 Dec, 2024 22:01:58 +0000",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [
+    {
+      "name" : "/fsh-generated/resources/ImplementationGuide-hl7.fhir.no.domain.ehr.core.json",
+      "size" : 5881,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 42,
+          "length" : 13
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 42,
+          "length" : 9
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 42,
+          "length" : 175
+        },
+        {
+          "activity" : "validate",
+          "start" : 45,
+          "length" : 744
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 46,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 46,
+          "length" : 104
+        },
+        {
+          "activity" : "generate2",
+          "start" : 50,
+          "length" : 62
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 65,
+          "length" : 1
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 65,
+          "length" : 2
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 72,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-no-ehr-core-appointment.json",
+      "size" : 708,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 41,
+          "length" : 15
+        },
+        {
+          "activity" : "load",
+          "start" : 42,
+          "length" : 7
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 42,
+          "length" : 43
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 42,
+          "length" : 59
+        },
+        {
+          "activity" : "validate",
+          "start" : 43,
+          "length" : 913
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 46,
+          "length" : 1
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 46,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 46,
+          "length" : 290
+        },
+        {
+          "activity" : "generate2",
+          "start" : 50,
+          "length" : 2192
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 65,
+          "length" : 6
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 72,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-no-ehr-core-careplan.json",
+      "size" : 934,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 41,
+          "length" : 14
+        },
+        {
+          "activity" : "load",
+          "start" : 42,
+          "length" : 3
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 42,
+          "length" : 78
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 42,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 43,
+          "length" : 37
+        },
+        {
+          "activity" : "validate",
+          "start" : 44,
+          "length" : 302
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 46,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 47,
+          "length" : 246
+        },
+        {
+          "activity" : "generate2",
+          "start" : 52,
+          "length" : 820
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 65,
+          "length" : 5
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 72,
+          "length" : 1
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 72,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-no-ehr-core-composition.json",
+      "size" : 708,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 42,
+          "length" : 5
+        },
+        {
+          "activity" : "load",
+          "start" : 42,
+          "length" : 3
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 42,
+          "length" : 79
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 43,
+          "length" : 33
+        },
+        {
+          "activity" : "validate",
+          "start" : 44,
+          "length" : 261
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 46,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 47,
+          "length" : 238
+        },
+        {
+          "activity" : "generate2",
+          "start" : 53,
+          "length" : 966
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 65,
+          "length" : 6
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 72,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-no-ehr-core-documentreference.json",
+      "size" : 763,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 42,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 42,
+          "length" : 2
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 42,
+          "length" : 73
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 43,
+          "length" : 31
+        },
+        {
+          "activity" : "validate",
+          "start" : 44,
+          "length" : 203
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 46,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 47,
+          "length" : 199
+        },
+        {
+          "activity" : "generate2",
+          "start" : 54,
+          "length" : 436
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 65,
+          "length" : 3
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-no-ehr-core-encounter.json",
+      "size" : 2066,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 42,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 42,
+          "length" : 3
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 42,
+          "length" : 92
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 43,
+          "length" : 61
+        },
+        {
+          "activity" : "validate",
+          "start" : 44,
+          "length" : 272
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 46,
+          "length" : 4
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 46,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 47,
+          "length" : 295
+        },
+        {
+          "activity" : "generate2",
+          "start" : 54,
+          "length" : 478
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 65,
+          "length" : 7
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 72,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-no-ehr-core-location.json",
+      "size" : 681,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 42,
+          "length" : 2
+        },
+        {
+          "activity" : "scan",
+          "start" : 42,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 42,
+          "length" : 2
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 42,
+          "length" : 43
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 43,
+          "length" : 28
+        },
+        {
+          "activity" : "validate",
+          "start" : 45,
+          "length" : 113
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 152
+        },
+        {
+          "activity" : "generate2",
+          "start" : 55,
+          "length" : 236
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 65,
+          "length" : 3
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-no-ehr-core-observation.json",
+      "size" : 679,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 42,
+          "length" : 2
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 42,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 42,
+          "length" : 3
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 42,
+          "length" : 92
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 43,
+          "length" : 29
+        },
+        {
+          "activity" : "validate",
+          "start" : 45,
+          "length" : 152
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 46,
+          "length" : 1
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 46,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 230
+        },
+        {
+          "activity" : "generate2",
+          "start" : 55,
+          "length" : 356
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 65,
+          "length" : 8
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-no-ehr-core-patient.json",
+      "size" : 720,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 42,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 42,
+          "length" : 3
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 42,
+          "length" : 88
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 43,
+          "length" : 31
+        },
+        {
+          "activity" : "validate",
+          "start" : 45,
+          "length" : 260
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 46,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 379
+        },
+        {
+          "activity" : "generate2",
+          "start" : 56,
+          "length" : 814
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 65,
+          "length" : 15
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 72,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-no-ehr-core-practitioner.json",
+      "size" : 730,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 42,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 42,
+          "length" : 4
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 42,
+          "length" : 61
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 43,
+          "length" : 24
+        },
+        {
+          "activity" : "validate",
+          "start" : 45,
+          "length" : 198
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 46,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 306
+        },
+        {
+          "activity" : "generate2",
+          "start" : 56,
+          "length" : 671
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 65,
+          "length" : 9
+        }
+      ]
+    }
+  ]
+}

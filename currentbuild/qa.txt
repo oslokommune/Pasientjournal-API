@@ -1,0 +1,60 @@
+NoDomainEHRCore : Validation Results
+=========================================
+
+err = 9, warn = 20, info = 0
+IG Publisher Version: 1.7.5
+Generated Thu Dec 05 22:02:29 UTC 2024. FHIR version 4.0.1 for hl7.fhir.no.domain.ehr.core#0.1.0 (canonical = https://github.com/oslokommune/Pasientjournal-API)
+ Build Errors : 2 / 10 / 0
+ /__w/Pasientjournal-API/Pasientjournal-API/no-ehr-core/fsh-generated/resources/ImplementationGuide-hl7.fhir.no.domain.ehr.core : 0 / 1 / 1
+ /__w/Pasientjournal-API/Pasientjournal-API/no-ehr-core/fsh-generated/resources/StructureDefinition-no-ehr-core-appointment : 1 / 1 / 1
+ /__w/Pasientjournal-API/Pasientjournal-API/no-ehr-core/fsh-generated/resources/StructureDefinition-no-ehr-core-careplan : 1 / 1 / 1
+ /__w/Pasientjournal-API/Pasientjournal-API/no-ehr-core/fsh-generated/resources/StructureDefinition-no-ehr-core-composition : 1 / 1 / 1
+ /__w/Pasientjournal-API/Pasientjournal-API/no-ehr-core/fsh-generated/resources/StructureDefinition-no-ehr-core-documentreference : 1 / 1 / 1
+ /__w/Pasientjournal-API/Pasientjournal-API/no-ehr-core/fsh-generated/resources/StructureDefinition-no-ehr-core-encounter : 1 / 1 / 1
+ /__w/Pasientjournal-API/Pasientjournal-API/no-ehr-core/fsh-generated/resources/StructureDefinition-no-ehr-core-location : 1 / 1 / 1
+ /__w/Pasientjournal-API/Pasientjournal-API/no-ehr-core/fsh-generated/resources/StructureDefinition-no-ehr-core-observation : 1 / 1 / 1
+ /__w/Pasientjournal-API/Pasientjournal-API/no-ehr-core/fsh-generated/resources/StructureDefinition-no-ehr-core-patient : 1 / 1 / 1
+ /__w/Pasientjournal-API/Pasientjournal-API/no-ehr-core/fsh-generated/resources/StructureDefinition-no-ehr-core-practitioner : 1 / 1 / 1
+</table>
+== n/a ==
+WARNING: Appointment.appointmentType.coding: The reference urn:oid:2.16.578.1.12.4.1.1.8406 could not be resolved
+WARNING: Appointment.appointmentType.coding: The reference urn:oid:2.16.578.1.12.4.1.1.8432 could not be resolved
+WARNING: Appointment.appointmentType.coding: The reference urn:oid:2.16.578.1.12.4.1.1.7617 could not be resolved
+WARNING: Practitioner.qualification.code.coding: The reference urn:oid:2.16.578.1.12.4.1.1.9060 could not be resolved
+WARNING: Practitioner.qualification.code.coding: The reference urn:oid:2.16.578.1.12.4.1.1.7704 could not be resolved
+WARNING: Practitioner.qualification.code.coding: The reference urn:oid:2.16.578.1.12.4.1.1.7426 could not be resolved
+ERROR: /__w/Pasientjournal-API/Pasientjournal-API/no-ehr-core/output/api.html#/html/body/div/div/div/div/div/p/a at Line 210, column 2: The link 'OpservationOps.html' for "Observation Operations" cannot be resolved
+ERROR: /__w/Pasientjournal-API/Pasientjournal-API/no-ehr-core/output/patientOps.html#/html/body/div/div/div/div/div/p/a at Line 177, column 30: The link 'StructureDefinition-no-ehr-core-patient.html'' for "patient" cannot be resolved
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/ImplementationGuide-hl7.fhir.no.domain.ehr.core.json ==
+WARNING: ImplementationGuide.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.no.domain.ehr.core, jurisdiction = urn:iso:std:iso:3166#NO instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO "null"')
+== fsh-generated/resources/StructureDefinition-no-ehr-core-appointment.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.no.domain.ehr.core, jurisdiction = urn:iso:std:iso:3166#NO instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO "null"')
+WARNING: StructureDefinition.where(url = 'https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/no-ehr-core-appointment'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-no-ehr-core-careplan.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.no.domain.ehr.core, jurisdiction = urn:iso:std:iso:3166#NO instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO "null"')
+WARNING: StructureDefinition.where(url = 'https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/no-ehr-core-careplan'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-no-ehr-core-composition.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.no.domain.ehr.core, jurisdiction = urn:iso:std:iso:3166#NO instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO "null"')
+WARNING: StructureDefinition.where(url = 'https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/no-ehr-core-composition'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-no-ehr-core-documentreference.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.no.domain.ehr.core, jurisdiction = urn:iso:std:iso:3166#NO instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO "null"')
+WARNING: StructureDefinition.where(url = 'https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/no-ehr-core-documentreference'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-no-ehr-core-encounter.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.no.domain.ehr.core, jurisdiction = urn:iso:std:iso:3166#NO instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO "null"')
+WARNING: StructureDefinition.where(url = 'https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/no-ehr-core-encounter'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-no-ehr-core-location.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.no.domain.ehr.core, jurisdiction = urn:iso:std:iso:3166#NO instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO "null"')
+WARNING: StructureDefinition.where(url = 'https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/no-ehr-core-location'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-no-ehr-core-observation.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.no.domain.ehr.core, jurisdiction = urn:iso:std:iso:3166#NO instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO "null"')
+WARNING: StructureDefinition.where(url = 'https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/no-ehr-core-observation'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-no-ehr-core-patient.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.no.domain.ehr.core, jurisdiction = urn:iso:std:iso:3166#NO instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO "null"')
+WARNING: StructureDefinition.where(url = 'https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/no-ehr-core-patient'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-no-ehr-core-practitioner.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.no.domain.ehr.core, jurisdiction = urn:iso:std:iso:3166#NO instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO "null"')
+WARNING: StructureDefinition.where(url = 'https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/no-ehr-core-practitioner'): The Implementation Guide contains no examples for this profile

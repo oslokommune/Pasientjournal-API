@@ -1,0 +1,72 @@
+[
+  {
+    "id" : "hl7.fhir.no.domain.ehr.core",
+    "type" : "ImplementationGuide",
+    "url" : "https://github.com/oslokommune/Pasientjournal-API/ImplementationGuide/hl7.fhir.no.domain.ehr.core",
+    "version" : "0.1.0",
+    "name" : "NoDomainEHRCore"
+  },
+  {
+    "id" : "no-ehr-core-appointment",
+    "type" : "StructureDefinition",
+    "url" : "https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/no-ehr-core-appointment",
+    "version" : "0.1.0",
+    "name" : "NoEHRCoreAppointment"
+  },
+  {
+    "id" : "no-ehr-core-careplan",
+    "type" : "StructureDefinition",
+    "url" : "https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/no-ehr-core-careplan",
+    "version" : "0.1.0",
+    "name" : "NoEHRCoreCarePlan"
+  },
+  {
+    "id" : "no-ehr-core-composition",
+    "type" : "StructureDefinition",
+    "url" : "https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/no-ehr-core-composition",
+    "version" : "0.1.0",
+    "name" : "NoEHRCoreComposition"
+  },
+  {
+    "id" : "no-ehr-core-documentreference",
+    "type" : "StructureDefinition",
+    "url" : "https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/no-ehr-core-documentreference",
+    "version" : "0.1.0",
+    "name" : "NoEHRCoreDocumentReference"
+  },
+  {
+    "id" : "no-ehr-core-encounter",
+    "type" : "StructureDefinition",
+    "url" : "https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/no-ehr-core-encounter",
+    "version" : "0.1.0",
+    "name" : "NoEHRCoreEncounter"
+  },
+  {
+    "id" : "no-ehr-core-location",
+    "type" : "StructureDefinition",
+    "url" : "https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/no-ehr-core-location",
+    "version" : "0.1.0",
+    "name" : "NoEHRCoreLocation"
+  },
+  {
+    "id" : "no-ehr-core-observation",
+    "type" : "StructureDefinition",
+    "url" : "https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/no-ehr-core-observation",
+    "version" : "0.1.0",
+    "name" : "NoEHRCoreObservation"
+  },
+  {
+    "id" : "no-ehr-core-patient",
+    "type" : "StructureDefinition",
+    "url" : "https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/no-ehr-core-patient",
+    "version" : "0.1.0",
+    "name" : "NoEHRCorePatient"
+  },
+  {
+    "id" : "no-ehr-core-practitioner",
+    "type" : "StructureDefinition",
+    "url" : "https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/no-ehr-core-practitioner",
+    "version" : "0.1.0",
+    "name" : "NoEHRCorePractitioner"
+  }
+]
