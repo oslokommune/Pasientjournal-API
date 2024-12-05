@@ -22,7 +22,7 @@ jobs:
           echo "NPM install fhir r4 core 4.0.1 from package registry"
           npm --registry https://packages.simplifier.net install hl7.fhir.r4.core@4.0.1
           echo "NPM install fhir no-basis220 from local tgz"
-          npm install snapshots/hl7.fhir.no.basis-2.2.0-snapshots.tgz
+          npm install ${{ github.workspace }}snapshots/hl7.fhir.no.basis-2.2.0-snapshots.tgz
           echo "Create .fhir packages cache directory for no-basis"
           mkdir -p /github/home/.fhir/packages/hl7.fhir.no.basis#2.2.0/package
           echo "Copy local no-basis snapshot to .fhir package cache directory"
