@@ -42,6 +42,8 @@ pages:
     title: Conformance  
   api.md:
     title: API Documentation
+    practitionerContextOps.md:
+      title: Practitioner operations
     appointmentOps.md:
       title:  Appointment operations
     carePlanOps.md:
@@ -98,12 +100,14 @@ menu:
   FHIR Profiles: artifacts.html
   API: 
     General: api.html
+    Practitioner Context: practitionerContextOps.html
     Appointment: appointmentOps.html
     CarePlan: carePlanOps.html
     Composition: compositionOps.html
     Document Reference: documentReferenceOps.html
     Encounter: encounterOps.html
     Location: locationOps.html
+    Observation: observationOps.html
     Patient: patientOps.html
     Practitioner: practitionerOps.html
     

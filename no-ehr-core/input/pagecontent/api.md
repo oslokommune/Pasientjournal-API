@@ -15,12 +15,9 @@ A server that supports the Norwegian EHR Core standard <b>SHALL:</b>
 It is recommended that EHR vendors that implement the operations described in this implementation guide support the [SMART](https://hl7.org/fhir/smart-app-launch/) App Launch Standard for interactions with external clients.
 
 
-
-
 ### Endpoints   
 
-[Patient Operations](patientOps.html)    
-[Practitioner Operations](practitionerOps.html)   
+[Practitioner Context](practitionerContextOps.html)   
 [Appointment Operations](appointmentOps.html)   
 [CarePlan Operations](carePlanOps.html)   
 [Composition Operations](compositionOps.html)   
@@ -28,3 +25,5 @@ It is recommended that EHR vendors that implement the operations described in th
 [Encounter Operations](encounterOps.html)   
 [Location Operations](locationOps.html)   
 [Observation Operations](OpservationOps.html)      
+[Patient Operations](patientOps.html)    
+[Practitioner Operations](practitionerOps.html)   
