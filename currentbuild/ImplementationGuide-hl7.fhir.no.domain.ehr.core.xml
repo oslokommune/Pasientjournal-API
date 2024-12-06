@@ -11,7 +11,7 @@
   <name value="NoDomainEHRCore"/>
   <title value="NO Domain Core EHR API"/>
   <status value="draft"/>
-  <date value="2024-12-05T22:01:58+00:00"/>
+  <date value="2024-12-06T17:06:03+00:00"/>
   <publisher value="Oslo Origo - Oslo kommune"/>
   <contact>
     <name value="Oslo Origo - Oslo kommune"/>
@@ -531,6 +531,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/no-ehr-core-organization"/>
+      </reference>
+      <name value="no-ehr-core-organization"/>
+      <description value="An Organization profile tailored for Norwegian EHR systems."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/no-ehr-core-patient"/>
       </reference>
       <name value="no-ehr-core-patient"/>
@@ -578,6 +589,14 @@
         <nameUrl value="api.html"/>
         <title value="API Documentation"/>
         <generation value="markdown"/>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="practitionerContextOps.html"/>
+          </extension>
+          <nameUrl value="practitionerContextOps.html"/>
+          <title value="Practitioner operations"/>
+          <generation value="markdown"/>
+        </page>
         <page>
           <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
             <valueUrl value="appointmentOps.html"/>

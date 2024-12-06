@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "NoDomainEHRCore"] ; # 
   fhir:title [ fhir:v "NO Domain Core EHR API"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-12-05T22:01:58+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-12-06T17:06:03+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Oslo Origo - Oslo kommune"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Oslo Origo - Oslo kommune" ] ;
@@ -608,6 +608,18 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/no-ehr-core-organization> ;
+         fhir:reference [ fhir:v "StructureDefinition/no-ehr-core-organization" ]
+       ] ;
+       fhir:name [ fhir:v "no-ehr-core-organization" ] ;
+       fhir:description [ fhir:v "An Organization profile tailored for Norwegian EHR systems." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/no-ehr-core-patient> ;
          fhir:reference [ fhir:v "StructureDefinition/no-ehr-core-patient" ]
        ] ;
@@ -660,6 +672,14 @@
          fhir:title [ fhir:v "API Documentation" ] ;
          fhir:generation [ fhir:v "markdown" ] ;
          fhir:page ( [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [ fhir:v "practitionerContextOps.html"^^xsd:anyURI ]
+           ] ) ;
+           fhir:name [ fhir:v "practitionerContextOps.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Practitioner operations" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
            fhir:extension ( [
              fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
              fhir:value [ fhir:v "appointmentOps.html"^^xsd:anyURI ]

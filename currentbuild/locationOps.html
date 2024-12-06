@@ -41,8 +41,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"3.6"}
-    h3,h4,h5,h6{--heading-prefix:"3.6"}</style>
+    <style type="text/css">h2{--heading-prefix:"3.7"}
+    h3,h4,h5,h6{--heading-prefix:"3.7"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -96,6 +96,9 @@
         <a href="api.html">General</a>
       </li>
       <li>
+        <a href="practitionerContextOps.html">Practitioner Context</a>
+      </li>
+      <li>
         <a href="appointmentOps.html">Appointment</a>
       </li>
       <li>
@@ -112,6 +115,9 @@
       </li>
       <li>
         <a href="locationOps.html">Location</a>
+      </li>
+      <li>
+        <a href="observationOps.html">Observation</a>
       </li>
       <li>
         <a href="patientOps.html">Patient</a>
@@ -173,6 +179,118 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
 </div>
 <h2 id="location">Location</h2>
+<h2 id="must-support">Must support</h2>
+<style>
+    table, th, td {
+        border: 1px solid silver;
+        border-collapse: collapse;
+    }
+</style>
+<table style="width:80%;">
+    <tr>
+        <th>Supported Profiles</th>
+        <th style="width:50%">Search parameters</th>
+        <th>Supported Includes</th>            
+    </tr>
+    <tr>
+        <td><a href="StructureDefinition-no-ehr-core-location.html">no-ehr-core-location</a></td>
+        <td>_id, birthdate, death-date, family, gender, given, identifier, name birthdate+name, 
+        family+gender, birthdate+family, gender+name death-date+family   </td>
+        <td></td>
+    </tr>
+</table>
+
+<h3 id="operations">Operations</h3>
+
+<h4 id="instance-level-interactions">Instance Level Interactions</h4>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://hl7.org/fhir/R4/http.html#read">read</a></td>
+      <td>Read the current state of the resource</td>
+    </tr>
+    <tr>
+      <td><a href="https://hl7.org/fhir/R4/http.html#update">update</a></td>
+      <td>Update an existing resource by its id (or create it if it is new)</td>
+    </tr>
+    <tr>
+      <td><a href="https://hl7.org/fhir/R4/http.html#patch">patch</a></td>
+      <td>Update an existing resource by posting a set of changes to it</td>
+    </tr>
+    <tr>
+      <td><a href="https://hl7.org/fhir/R4/http.html#delete">delete</a></td>
+      <td>Delete a resource</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="type-level-interactions">Type Level Interactions</h4>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://hl7.org/fhir/R4/http.html#create">create</a></td>
+      <td>Create a new resource with a server assigned id</td>
+    </tr>
+    <tr>
+      <td><a href="https://hl7.org/fhir/R4/http.html#search">search</a></td>
+      <td>Search the resource type based on some filter criteria</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="may-support">May support</h2>
+
+<h4 id="instance-level-interactions-1">Instance Level Interactions</h4>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://hl7.org/fhir/R4/http.html#vread">vread</a></td>
+      <td>Read the state of a specific version of the resource</td>
+    </tr>
+    <tr>
+      <td><a href="https://hl7.org/fhir/R4/http.html#history">history</a></td>
+      <td>Retrieve the change history for a particular resource</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="type-level-interactions-1">Type Level Interactions</h4>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://hl7.org/fhir/R4/http.html#history">history</a></td>
+      <td>Retrieve the change history for a particular resource type</td>
+    </tr>
+  </tbody>
+</table>
 
 
 
@@ -193,7 +311,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://labs.oslo.kommune.no/">Oslo Origo - Oslo kommune</a>.  Package hl7.fhir.no.domain.ehr.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Dec 5, 2024 22:01+0000">2024-12-05</span>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://labs.oslo.kommune.no/">Oslo Origo - Oslo kommune</a>.  Package hl7.fhir.no.domain.ehr.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Dec 6, 2024 17:06+0000">2024-12-06</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -261,9 +261,9 @@
       "oids" : ["2.16.840.1.113883.6.1"],
       "uses" : {
       },
+      "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes",
       "http://hl7.org/fhir/R4/valueset-document-classcodes.html" : "Document Class Value Set",
-      "http://hl7.org/fhir/R4/valueset-doc-section-codes.html" : "Document Section Codes",
-      "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes"
+      "http://hl7.org/fhir/R4/valueset-doc-section-codes.html" : "Document Section Codes"
     },
     {
       "url" : "http://snomed.info/sct",
@@ -275,17 +275,17 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-c80-facilitycodes.html" : "Facility Type Code Value Set",
-      "http://hl7.org/fhir/R4/valueset-procedure-code.html" : "Procedure Codes (SNOMED CT)",
-      "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
-      "http://hl7.org/fhir/R4/valueset-care-plan-activity-outcome.html" : "Care Plan Activity Outcome",
       "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
-      "http://hl7.org/fhir/R4/valueset-medication-codes.html" : "SNOMED CT Medication Codes",
+      "http://hl7.org/fhir/R4/valueset-c80-facilitycodes.html" : "Facility Type Code Value Set",
       "http://hl7.org/fhir/R4/valueset-care-plan-category.html" : "Care Plan Category",
-      "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
       "http://hl7.org/fhir/R4/valueset-encounter-reason.html" : "Encounter Reason Codes",
+      "http://hl7.org/fhir/R4/valueset-procedure-code.html" : "Procedure Codes (SNOMED CT)",
+      "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set",
+      "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
+      "http://hl7.org/fhir/R4/valueset-care-plan-activity-outcome.html" : "Care Plan Activity Outcome",
+      "http://hl7.org/fhir/R4/valueset-medication-codes.html" : "SNOMED CT Medication Codes",
       "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings",
-      "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set"
+      "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/admit-source",
@@ -310,6 +310,18 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-appointment-cancellation-reason.html" : "Appointment cancellation reason"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/contactentity-type",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "ContactEntityType",
+      "title" : "Contact entity type",
+      "description" : "This example value set defines a set of codes that can be used to indicate the purpose for which you would contact a contact party.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1129"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-contactentity-type.html" : "Contact entity type"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/data-absent-reason",
@@ -430,6 +442,18 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-observation-category.html" : "Observation Category Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/organization-type",
+      "version" : "2.0.1",
+      "status" : "active",
+      "name" : "OrganizationType",
+      "title" : "Organization type",
+      "description" : "This example value set defines a set of codes that can be used to indicate a type of organization.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1128"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-organization-type.html" : "Organization type"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/participant-type",
@@ -610,8 +634,8 @@
       "oids" : ["2.16.840.1.113883.5.1008"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-marital-status.html" : "MaritalStatus",
-      "http://hl7.org/fhir/R4/valueset-encounter-special-courtesy.html" : "Special courtesy"
+      "http://hl7.org/fhir/R4/valueset-encounter-special-courtesy.html" : "Special courtesy",
+      "http://hl7.org/fhir/R4/valueset-marital-status.html" : "MaritalStatus"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",

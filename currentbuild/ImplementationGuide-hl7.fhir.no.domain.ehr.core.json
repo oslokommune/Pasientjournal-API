@@ -10,7 +10,7 @@
   "name" : "NoDomainEHRCore",
   "title" : "NO Domain Core EHR API",
   "status" : "draft",
-  "date" : "2024-12-05T22:01:58+00:00",
+  "date" : "2024-12-06T17:06:03+00:00",
   "publisher" : "Oslo Origo - Oslo kommune",
   "contact" : [{
     "name" : "Oslo Origo - Oslo kommune",
@@ -694,6 +694,18 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/no-ehr-core-organization"
+      },
+      "name" : "no-ehr-core-organization",
+      "description" : "An Organization profile tailored for Norwegian EHR systems.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/no-ehr-core-patient"
       },
       "name" : "no-ehr-core-patient",
@@ -747,6 +759,15 @@
         "title" : "API Documentation",
         "generation" : "markdown",
         "page" : [{
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "practitionerContextOps.html"
+          }],
+          "nameUrl" : "practitionerContextOps.html",
+          "title" : "Practitioner operations",
+          "generation" : "markdown"
+        },
+        {
           "extension" : [{
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
             "valueUrl" : "appointmentOps.html"

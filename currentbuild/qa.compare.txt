@@ -1,10 +1,10 @@
 NoDomainEHRCore : Validation Results
 =========================================
 
-err = 9, warn = 20, info = 0
+err = 10, warn = 23, info = 0
 $--
 Generated $--. FHIR version $-- for hl7.fhir.no.domain.ehr.core#$-- (canonical = https://github.com/oslokommune/Pasientjournal-API)
- Build Errors : 2 / 10 / 0
+ Build Errors : 3 / 12 / 0
  /__w/Pasientjournal-API/Pasientjournal-API/no-ehr-core/fsh-generated/resources/ImplementationGuide-hl7.fhir.no.domain.ehr.core : 0 / 1 / 1
  /__w/Pasientjournal-API/Pasientjournal-API/no-ehr-core/fsh-generated/resources/StructureDefinition-no-ehr-core-appointment : 1 / 1 / 1
  /__w/Pasientjournal-API/Pasientjournal-API/no-ehr-core/fsh-generated/resources/StructureDefinition-no-ehr-core-careplan : 1 / 1 / 1
@@ -13,6 +13,7 @@ Generated $--. FHIR version $-- for hl7.fhir.no.domain.ehr.core#$-- (canonical =
  /__w/Pasientjournal-API/Pasientjournal-API/no-ehr-core/fsh-generated/resources/StructureDefinition-no-ehr-core-encounter : 1 / 1 / 1
  /__w/Pasientjournal-API/Pasientjournal-API/no-ehr-core/fsh-generated/resources/StructureDefinition-no-ehr-core-location : 1 / 1 / 1
  /__w/Pasientjournal-API/Pasientjournal-API/no-ehr-core/fsh-generated/resources/StructureDefinition-no-ehr-core-observation : 1 / 1 / 1
+ /__w/Pasientjournal-API/Pasientjournal-API/no-ehr-core/fsh-generated/resources/StructureDefinition-no-ehr-core-organization : 1 / 1 / 1
  /__w/Pasientjournal-API/Pasientjournal-API/no-ehr-core/fsh-generated/resources/StructureDefinition-no-ehr-core-patient : 1 / 1 / 1
  /__w/Pasientjournal-API/Pasientjournal-API/no-ehr-core/fsh-generated/resources/StructureDefinition-no-ehr-core-practitioner : 1 / 1 / 1
 </table>
@@ -20,11 +21,14 @@ Generated $--. FHIR version $-- for hl7.fhir.no.domain.ehr.core#$-- (canonical =
 WARNING: Appointment.appointmentType.coding: The reference urn:oid:2.16.578.1.12.4.1.1.8406 could not be resolved
 WARNING: Appointment.appointmentType.coding: The reference urn:oid:2.16.578.1.12.4.1.1.8432 could not be resolved
 WARNING: Appointment.appointmentType.coding: The reference urn:oid:2.16.578.1.12.4.1.1.7617 could not be resolved
+WARNING: Organization.type: The reference urn:oid:2.16.578.1.12.4.1.1.8628 could not be resolved
+WARNING: Organization.type: The reference urn:oid:2.16.578.1.12.4.1.1.8624 could not be resolved
 WARNING: Practitioner.qualification.code.coding: The reference urn:oid:2.16.578.1.12.4.1.1.9060 could not be resolved
 WARNING: Practitioner.qualification.code.coding: The reference urn:oid:2.16.578.1.12.4.1.1.7704 could not be resolved
 WARNING: Practitioner.qualification.code.coding: The reference urn:oid:2.16.578.1.12.4.1.1.7426 could not be resolved
-ERROR: /__w/Pasientjournal-API/Pasientjournal-API/no-ehr-core/output/api.html#/html/body/div/div/div/div/div/p/a at Line 210, column 2: The link 'OpservationOps.html' for "Observation Operations" cannot be resolved
-ERROR: /__w/Pasientjournal-API/Pasientjournal-API/no-ehr-core/output/patientOps.html#/html/body/div/div/div/div/div/p/a at Line 177, column 30: The link 'StructureDefinition-no-ehr-core-patient.html'' for "patient" cannot be resolved
+ERROR: /__w/Pasientjournal-API/Pasientjournal-API/no-ehr-core/output/api.html#/html/body/div/div/div/div/div/p/a at Line 215, column 2: The link 'OpservationOps.html' for "Observation Operations" cannot be resolved
+ERROR: /__w/Pasientjournal-API/Pasientjournal-API/no-ehr-core/output/documentReferenceOps.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 196, column 14: The link 'StructureDefinition-no-ehr-core-document-reference.html' for "no-ehr-core-document-reference" cannot be resolved
+ERROR: /__w/Pasientjournal-API/Pasientjournal-API/no-ehr-core/output/patientOps.html#/html/body/div/div/div/div/div/p/a at Line 183, column 30: The link 'StructureDefinition-no-ehr-core-patient.html'' for "patient" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
@@ -52,6 +56,9 @@ WARNING: StructureDefinition.where(url = 'https://github.com/oslokommune/Pasient
 == fsh-generated/resources/StructureDefinition-no-ehr-core-observation.json ==
 ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.no.domain.ehr.core, jurisdiction = urn:iso:std:iso:3166#NO instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO "null"')
 WARNING: StructureDefinition.where(url = 'https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/no-ehr-core-observation'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-no-ehr-core-organization.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.no.domain.ehr.core, jurisdiction = urn:iso:std:iso:3166#NO instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO "null"')
+WARNING: StructureDefinition.where(url = 'https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/no-ehr-core-organization'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-no-ehr-core-patient.json ==
 ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.no.domain.ehr.core, jurisdiction = urn:iso:std:iso:3166#NO instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO "null"')
 WARNING: StructureDefinition.where(url = 'https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/no-ehr-core-patient'): The Implementation Guide contains no examples for this profile

@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "NoEHRCorePatient"] ; # 
   fhir:title [ fhir:v "no-ehr-core-patient"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-12-05T22:01:58+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-12-06T17:06:03+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Oslo Origo - Oslo kommune"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Oslo Origo - Oslo kommune" ] ;

@@ -56,6 +56,13 @@
     "name" : "NoEHRCoreObservation"
   },
   {
+    "id" : "no-ehr-core-organization",
+    "type" : "StructureDefinition",
+    "url" : "https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/no-ehr-core-organization",
+    "version" : "0.1.0",
+    "name" : "NoEHRCoreOrganization"
+  },
+  {
     "id" : "no-ehr-core-patient",
     "type" : "StructureDefinition",
     "url" : "https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/no-ehr-core-patient",

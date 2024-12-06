@@ -10,8 +10,8 @@
       "systems" : ["urn:oid:2.16.578.1.12.4.1.1.9602"],
       "uses" : {
       },
-      "StructureDefinition-no-ehr-core-composition.html" : "no-ehr-core-composition",
-      "StructureDefinition-no-ehr-core-documentreference.html" : "no-ehr-core-document-reference"
+      "StructureDefinition-no-ehr-core-documentreference.html" : "no-ehr-core-document-reference",
+      "StructureDefinition-no-ehr-core-composition.html" : "no-ehr-core-composition"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
@@ -98,8 +98,8 @@
       "sources" : ["2.16.840.1.113883.3.88.12.80.72"],
       "uses" : {
       },
-      "StructureDefinition-no-ehr-core-appointment.html" : "no-ehr-core-appointment",
-      "StructureDefinition-no-ehr-core-documentreference.html" : "no-ehr-core-document-reference"
+      "StructureDefinition-no-ehr-core-documentreference.html" : "no-ehr-core-document-reference",
+      "StructureDefinition-no-ehr-core-appointment.html" : "no-ehr-core-appointment"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/care-plan-activity-kind",
@@ -211,8 +211,22 @@
       "sources" : ["2.16.840.1.113883.4.642.3.241"],
       "uses" : {
       },
-      "StructureDefinition-no-ehr-core-composition.html" : "no-ehr-core-composition",
-      "StructureDefinition-no-ehr-core-documentreference.html" : "no-ehr-core-document-reference"
+      "StructureDefinition-no-ehr-core-documentreference.html" : "no-ehr-core-document-reference",
+      "StructureDefinition-no-ehr-core-composition.html" : "no-ehr-core-composition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/contactentity-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ContactEntityType",
+      "title" : "Contact entity type",
+      "description" : "This example value set defines a set of codes that can be used to indicate the purpose for which you would contact a contact party.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/contactentity-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.416"],
+      "sources" : ["2.16.840.1.113883.4.642.3.416"],
+      "uses" : {
+      },
+      "StructureDefinition-no-ehr-core-organization.html" : "no-ehr-core-organization"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/data-absent-reason",
@@ -282,8 +296,8 @@
       "sources" : ["2.16.840.1.113883.3.88.12.80.46"],
       "uses" : {
       },
-      "StructureDefinition-no-ehr-core-composition.html" : "no-ehr-core-composition",
-      "StructureDefinition-no-ehr-core-documentreference.html" : "no-ehr-core-document-reference"
+      "StructureDefinition-no-ehr-core-documentreference.html" : "no-ehr-core-document-reference",
+      "StructureDefinition-no-ehr-core-composition.html" : "no-ehr-core-composition"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/document-reference-status",
@@ -311,8 +325,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.244"],
       "uses" : {
       },
-      "StructureDefinition-no-ehr-core-composition.html" : "no-ehr-core-composition",
-      "StructureDefinition-no-ehr-core-documentreference.html" : "no-ehr-core-document-reference"
+      "StructureDefinition-no-ehr-core-documentreference.html" : "no-ehr-core-document-reference",
+      "StructureDefinition-no-ehr-core-composition.html" : "no-ehr-core-composition"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-admit-source",
@@ -493,7 +507,8 @@
       "uses" : {
       },
       "StructureDefinition-no-ehr-core-patient.html" : "no-ehr-core-patient",
-      "StructureDefinition-no-ehr-core-practitioner.html" : "no-ehr-core-practitioner"
+      "StructureDefinition-no-ehr-core-practitioner.html" : "no-ehr-core-practitioner",
+      "StructureDefinition-no-ehr-core-organization.html" : "no-ehr-core-organization"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -508,7 +523,8 @@
       "uses" : {
       },
       "StructureDefinition-no-ehr-core-patient.html" : "no-ehr-core-patient",
-      "StructureDefinition-no-ehr-core-practitioner.html" : "no-ehr-core-practitioner"
+      "StructureDefinition-no-ehr-core-practitioner.html" : "no-ehr-core-practitioner",
+      "StructureDefinition-no-ehr-core-organization.html" : "no-ehr-core-organization"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -522,14 +538,15 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-no-ehr-core-composition.html" : "no-ehr-core-composition",
+      "StructureDefinition-no-ehr-core-patient.html" : "no-ehr-core-patient",
+      "StructureDefinition-no-ehr-core-documentreference.html" : "no-ehr-core-document-reference",
       "StructureDefinition-no-ehr-core-encounter.html" : "no-ehr-core-encounter",
+      "StructureDefinition-no-ehr-core-practitioner.html" : "no-ehr-core-practitioner",
       "StructureDefinition-no-ehr-core-appointment.html" : "no-ehr-core-appointment",
       "StructureDefinition-no-ehr-core-careplan.html" : "no-ehr-core-care-plan",
+      "StructureDefinition-no-ehr-core-organization.html" : "no-ehr-core-organization",
       "StructureDefinition-no-ehr-core-observation.html" : "no-ehr-core-observation",
-      "StructureDefinition-no-ehr-core-patient.html" : "no-ehr-core-patient",
-      "StructureDefinition-no-ehr-core-practitioner.html" : "no-ehr-core-practitioner",
-      "StructureDefinition-no-ehr-core-documentreference.html" : "no-ehr-core-document-reference",
+      "StructureDefinition-no-ehr-core-composition.html" : "no-ehr-core-composition",
       "StructureDefinition-no-ehr-core-location.html" : "no-ehr-core-location"
     },
     {
@@ -735,6 +752,20 @@
       "uses" : {
       },
       "StructureDefinition-no-ehr-core-observation.html" : "no-ehr-core-observation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/organization-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "OrganizationType",
+      "title" : "Organization type",
+      "description" : "This example value set defines a set of codes that can be used to indicate a type of organization.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/organization-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.414"],
+      "sources" : ["2.16.840.1.113883.4.642.3.414"],
+      "uses" : {
+      },
+      "StructureDefinition-no-ehr-core-organization.html" : "no-ehr-core-organization"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/participantrequired",
@@ -952,8 +983,8 @@
       "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
       "uses" : {
       },
-      "StructureDefinition-no-ehr-core-composition.html" : "no-ehr-core-composition",
-      "StructureDefinition-no-ehr-core-documentreference.html" : "no-ehr-core-document-reference"
+      "StructureDefinition-no-ehr-core-documentreference.html" : "no-ehr-core-document-reference",
+      "StructureDefinition-no-ehr-core-composition.html" : "no-ehr-core-composition"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v3-ActEncounterCode",
