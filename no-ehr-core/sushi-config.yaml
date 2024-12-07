@@ -43,7 +43,7 @@ pages:
   api.md:
     title: API Documentation
     practitionerContextOps.md:
-      title: Practitioner operations
+      title: Practitioner Context
     appointmentOps.md:
       title:  Appointment operations
     carePlanOps.md:
