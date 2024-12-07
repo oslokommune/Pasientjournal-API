@@ -25,8 +25,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1"],
       "uses" : {
       },
-      "StructureDefinition-no-ehr-core-patient.html" : "no-ehr-core-patient",
-      "StructureDefinition-no-ehr-core-practitioner.html" : "no-ehr-core-practitioner"
+      "StructureDefinition-no-ehr-core-practitioner.html" : "no-ehr-core-practitioner",
+      "StructureDefinition-no-ehr-core-patient.html" : "no-ehr-core-patient"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/appointment-cancellation-reason",
@@ -506,9 +506,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.45"],
       "uses" : {
       },
-      "StructureDefinition-no-ehr-core-patient.html" : "no-ehr-core-patient",
+      "StructureDefinition-no-ehr-core-organization.html" : "no-ehr-core-organization",
       "StructureDefinition-no-ehr-core-practitioner.html" : "no-ehr-core-practitioner",
-      "StructureDefinition-no-ehr-core-organization.html" : "no-ehr-core-organization"
+      "StructureDefinition-no-ehr-core-patient.html" : "no-ehr-core-patient"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -522,9 +522,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.57"],
       "uses" : {
       },
-      "StructureDefinition-no-ehr-core-patient.html" : "no-ehr-core-patient",
+      "StructureDefinition-no-ehr-core-organization.html" : "no-ehr-core-organization",
       "StructureDefinition-no-ehr-core-practitioner.html" : "no-ehr-core-practitioner",
-      "StructureDefinition-no-ehr-core-organization.html" : "no-ehr-core-organization"
+      "StructureDefinition-no-ehr-core-patient.html" : "no-ehr-core-patient"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -538,16 +538,16 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-no-ehr-core-patient.html" : "no-ehr-core-patient",
+      "StructureDefinition-no-ehr-core-observation.html" : "no-ehr-core-observation",
+      "StructureDefinition-no-ehr-core-organization.html" : "no-ehr-core-organization",
+      "StructureDefinition-no-ehr-core-careplan.html" : "no-ehr-core-care-plan",
       "StructureDefinition-no-ehr-core-documentreference.html" : "no-ehr-core-document-reference",
       "StructureDefinition-no-ehr-core-encounter.html" : "no-ehr-core-encounter",
       "StructureDefinition-no-ehr-core-practitioner.html" : "no-ehr-core-practitioner",
+      "StructureDefinition-no-ehr-core-location.html" : "no-ehr-core-location",
+      "StructureDefinition-no-ehr-core-patient.html" : "no-ehr-core-patient",
       "StructureDefinition-no-ehr-core-appointment.html" : "no-ehr-core-appointment",
-      "StructureDefinition-no-ehr-core-careplan.html" : "no-ehr-core-care-plan",
-      "StructureDefinition-no-ehr-core-organization.html" : "no-ehr-core-organization",
-      "StructureDefinition-no-ehr-core-observation.html" : "no-ehr-core-observation",
-      "StructureDefinition-no-ehr-core-composition.html" : "no-ehr-core-composition",
-      "StructureDefinition-no-ehr-core-location.html" : "no-ehr-core-location"
+      "StructureDefinition-no-ehr-core-composition.html" : "no-ehr-core-composition"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",

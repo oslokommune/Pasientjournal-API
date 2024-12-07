@@ -3,7 +3,7 @@ NoDomainEHRCore : Validation Results
 
 err = 10, warn = 23, info = 0
 IG Publisher Version: 1.7.5
-Generated Fri Dec 06 17:06:36 UTC 2024. FHIR version 4.0.1 for hl7.fhir.no.domain.ehr.core#0.1.0 (canonical = https://github.com/oslokommune/Pasientjournal-API)
+Generated Sat Dec 07 20:45:29 UTC 2024. FHIR version 4.0.1 for hl7.fhir.no.domain.ehr.core#0.1.0 (canonical = https://github.com/oslokommune/Pasientjournal-API)
  Build Errors : 3 / 12 / 0
  /__w/Pasientjournal-API/Pasientjournal-API/no-ehr-core/fsh-generated/resources/ImplementationGuide-hl7.fhir.no.domain.ehr.core : 0 / 1 / 1
  /__w/Pasientjournal-API/Pasientjournal-API/no-ehr-core/fsh-generated/resources/StructureDefinition-no-ehr-core-appointment : 1 / 1 / 1

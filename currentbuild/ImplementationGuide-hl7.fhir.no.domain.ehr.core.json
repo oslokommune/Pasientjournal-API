@@ -10,7 +10,7 @@
   "name" : "NoDomainEHRCore",
   "title" : "NO Domain Core EHR API",
   "status" : "draft",
-  "date" : "2024-12-06T17:06:03+00:00",
+  "date" : "2024-12-07T20:44:56+00:00",
   "publisher" : "Oslo Origo - Oslo kommune",
   "contact" : [{
     "name" : "Oslo Origo - Oslo kommune",
@@ -764,7 +764,7 @@
             "valueUrl" : "practitionerContextOps.html"
           }],
           "nameUrl" : "practitionerContextOps.html",
-          "title" : "Practitioner operations",
+          "title" : "Practitioner Context",
           "generation" : "markdown"
         },
         {

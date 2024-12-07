@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "NoDomainEHRCore"] ; # 
   fhir:title [ fhir:v "NO Domain Core EHR API"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-12-06T17:06:03+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-12-07T20:44:56+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Oslo Origo - Oslo kommune"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Oslo Origo - Oslo kommune" ] ;
@@ -677,7 +677,7 @@
              fhir:value [ fhir:v "practitionerContextOps.html"^^xsd:anyURI ]
            ] ) ;
            fhir:name [ fhir:v "practitionerContextOps.html"^^xsd:anyURI ] ;
-           fhir:title [ fhir:v "Practitioner operations" ] ;
+           fhir:title [ fhir:v "Practitioner Context" ] ;
            fhir:generation [ fhir:v "markdown" ]
          ] [
            fhir:extension ( [

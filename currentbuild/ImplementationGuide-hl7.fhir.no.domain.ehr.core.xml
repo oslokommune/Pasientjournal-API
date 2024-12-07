@@ -11,7 +11,7 @@
   <name value="NoDomainEHRCore"/>
   <title value="NO Domain Core EHR API"/>
   <status value="draft"/>
-  <date value="2024-12-06T17:06:03+00:00"/>
+  <date value="2024-12-07T20:44:56+00:00"/>
   <publisher value="Oslo Origo - Oslo kommune"/>
   <contact>
     <name value="Oslo Origo - Oslo kommune"/>
@@ -594,7 +594,7 @@
             <valueUrl value="practitionerContextOps.html"/>
           </extension>
           <nameUrl value="practitionerContextOps.html"/>
-          <title value="Practitioner operations"/>
+          <title value="Practitioner Context"/>
           <generation value="markdown"/>
         </page>
         <page>
