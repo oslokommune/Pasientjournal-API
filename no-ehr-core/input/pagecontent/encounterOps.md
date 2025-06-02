@@ -1,4 +1,4 @@
-## Encounter
+## Episode of Care Operations
 ## Must support 
 {::nomarkdown}
 <style>
@@ -14,9 +14,8 @@
         <th>Supported Includes</th>            
     </tr>
     <tr>
-        <td><a href="StructureDefinition-no-ehr-core-encounter.html">no-ehr-core-encounter</a></td>
-        <td>_id, birthdate, death-date, family, gender, given, identifier, name birthdate+name, 
-        family+gender, birthdate+family, gender+name death-date+family   </td>
+        <td><a href="StructureDefinition-municipal-encounter.html">municipal-encounter</a></td>
+        <td>_id, type </td>
         <td></td>
     </tr>
 </table>

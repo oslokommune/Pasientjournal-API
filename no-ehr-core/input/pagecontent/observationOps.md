@@ -1,6 +1,6 @@
 ## Observation
 
-API actions related to [NO-EHR-Core-Observation](StructureDefinition-no-ehr-core-observation.html) resources
+API actions related to [municipal-Observation](StructureDefinition-municipal-observation.html) resources
 
 Category of operations related to measurements and observations. An observation typically has a clearly defined type with associated value sets and code systems. Observations are exists in relation to a patient and often occur in relation to other measurements, events, or procedures. 
 
@@ -19,7 +19,7 @@ Category of operations related to measurements and observations. An observation 
         <th>Supported Includes</th>            
     </tr>
     <tr>
-        <td><a href="StructureDefinition-no-ehr-core-observation.html">no-ehr-core-observation</a></td>
+        <td><a href="StructureDefinition-municipal-observation.html">municipal-observation</a></td>
         <td>_id, birthdate, death-date, family, gender, given, identifier, name birthdate+name, 
         family+gender, birthdate+family, gender+name death-date+family   </td>
         <td></td>

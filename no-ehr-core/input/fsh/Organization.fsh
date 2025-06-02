@@ -1,5 +1,8 @@
-Profile: NoEHRCoreOrganization
+Profile: MunicipalOrganization
 Parent: NoBasisOrganization
-Id: no-ehr-core-organization
-Title: "no-ehr-core-organization"
-Description: "An Organization profile tailored for Norwegian EHR systems."
+Id: municipal-organization
+Title: "municipal-organization"
+Description: "An Organization profile created for the NO Municipal standard API."
+
+* identifier 1..1
+* identifier.system = "urn:oid:2.16.578.1.12.4.1.4.101" (exactly)

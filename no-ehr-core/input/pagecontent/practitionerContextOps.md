@@ -19,28 +19,28 @@ The following resouces shall be used in the implementation of this endpoint
         <th>Supported Includes</th>            
     </tr>
     <tr>
-        <td><a href="StructureDefinition-no-ehr-core-encounter.html">no-ehr-core-encounter</a></td>
+        <td><a href="StructureDefinition-municipal-encounter.html">municipal-encounter</a></td>
         <td>_id </td>
         <td></td>
     </tr>
     <tr>
-        <td><a href="StructureDefinition-no-ehr-core-location.html">no-ehr-core-location</a></td>
+        <td><a href="StructureDefinition-municipal-location.html">municipal-location</a></td>
         <td>_id  </td>
         <td></td>
     </tr>
     <tr>
-        <td><a href="StructureDefinition-no-ehr-core-patient.html">no-ehr-core-patient</a></td>
+        <td><a href="StructureDefinition-municipal-patient.html">municipal-patient</a></td>
         <td>_id, birthdate, death-date, family, gender, given, identifier, name birthdate+name, 
         family+gender, birthdate+family, gender+name death-date+family   </td>
         <td></td>
     </tr>
     <tr>
-        <td><a href="StructureDefinition-no-ehr-core-practitioner.html">no-ehr-core-practitioner</a></td>
+        <td><a href="StructureDefinition-municipal-practitioner.html">municipal-practitioner</a></td>
         <td>_id, identifier </td>
         <td></td>
     </tr>
     <tr>
-        <td><a href="StructureDefinition-no-ehr-core-organization.html">no-ehr-core-organization</a></td>
+        <td><a href="StructureDefinition-municipal-organization.html">municipal-organization</a></td>
         <td>_id </td>
         <td></td>
     </tr>

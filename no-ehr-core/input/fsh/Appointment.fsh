@@ -1,5 +1,5 @@
-Profile: NoEHRCoreAppointment
+Profile: MunicipalAppointment
 Parent: NoBasisAppointment
-Id: no-ehr-core-appointment
-Title: "no-ehr-core-appointment"
-Description: "A profile extending the no-basis-Appointment profile for Norwegian EHR systems."
+Id: municipal-appointment
+Title: "municipal-appointment"
+Description: "A profile extending the no-basis-Appointment profile for the NO Municipal standard API"

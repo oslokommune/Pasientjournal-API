@@ -14,7 +14,7 @@
         <th>Supported Includes</th>            
     </tr>
     <tr>
-        <td><a href="StructureDefinition-no-ehr-core-composition.html">no-ehr-core-composition</a></td>
+        <td><a href="StructureDefinition-municipal-composition.html">municipal-composition</a></td>
         <td>_id, birthdate, death-date, family, gender, given, identifier, name birthdate+name, 
         family+gender, birthdate+family, gender+name death-date+family   </td>
         <td></td>

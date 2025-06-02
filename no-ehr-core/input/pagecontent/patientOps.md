@@ -1,6 +1,6 @@
 ## Patient
 
-API actions related to a [patient](StructureDefinition-no-ehr-core-patient.html')
+API actions related to a [patient](StructureDefinition-municipal-patient.html')
 
 Category of operations related to patients. A patient is an individual with a unique system ID and typically a national identifier such as F-number, D-number, or a combination of first name/last name and a date of birth. A patient is unique in the context of a medical record system.
 
@@ -19,7 +19,7 @@ Category of operations related to patients. A patient is an individual with a un
         <th>Supported Includes</th>            
     </tr>
     <tr>
-        <td><a href="StructureDefinition-no-ehr-core-patient.html">no-ehr-core-patient</a></td>
+        <td><a href="StructureDefinition-municipal-patient.html">municipal-patient</a></td>
         <td>_id, birthdate, death-date, family, gender, given, identifier, name birthdate+name, 
         family+gender, birthdate+family, gender+name death-date+family   </td>
         <td></td>

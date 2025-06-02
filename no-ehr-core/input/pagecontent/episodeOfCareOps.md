@@ -1,4 +1,4 @@
-## Document Reference
+## Encounter
 ## Must support 
 {::nomarkdown}
 <style>
@@ -14,7 +14,7 @@
         <th>Supported Includes</th>            
     </tr>
     <tr>
-        <td><a href="StructureDefinition-municipal-document-reference.html">municipal-document-reference</a></td>
+        <td><a href="StructureDefinition-municipal-encounter.html">municipal-encounter</a></td>
         <td>_id, birthdate, death-date, family, gender, given, identifier, name birthdate+name, 
         family+gender, birthdate+family, gender+name death-date+family   </td>
         <td></td>
@@ -59,4 +59,4 @@
 |------|--------------|   
 | [history](https://hl7.org/fhir/R4/http.html#history) | Retrieve the change history for a particular resource type
 {:.grid}
-
+    

@@ -1,8 +1,8 @@
-Profile: NoEHRCoreCarePlan
+Profile: MunicipalCarePlan
 Parent: CarePlan
-Id: no-ehr-core-careplan
-Title: "no-ehr-core-care-plan"
-Description: "A CarePlan profile tailored for Norwegian EHR systems."
+Id: municipal-careplan
+Title: "municipal-care-plan"
+Description: "A CarePlan profile created for the NO Municipal standard API"
 
 * ^status = #draft
 * subject only Reference(NoBasisPatient or Group)

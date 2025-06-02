@@ -3,15 +3,15 @@
 # │  used properties are included. For a list of all supported properties and their functions,     │
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: hl7.fhir.no.domain.ehr.core
+id: hl7.fhir.no.municipal
 canonical: https://github.com/oslokommune/Pasientjournal-API
-name: NoDomainEHRCore
-title: NO Domain Core EHR API
-description: Implementation Guide for core API to interact with EHR systems in Norwegian primary healthcare services
+name: Municipal
+title: NO Municipal API
+description: Implementation Guide for standard API to interact with EHR systems in Norwegian municipal healthcare services
 status: draft # draft | active | retired | unknown
-version: 0.1.0
+version: 0.2.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
-copyrightYear: 2024+
+copyrightYear: 2025+
 releaseLabel: ci-build
 
 publisher:
@@ -54,6 +54,8 @@ pages:
       title: DocumentReference operations
     encounterOps.md:
       title: Encounter operations
+    episodeOfCareOps.md:
+      title: EpisodeOfCare operations
     locationOps.md:
       title: Location operations
     observationOps.md:
@@ -106,6 +108,7 @@ menu:
     Composition: compositionOps.html
     Document Reference: documentReferenceOps.html
     Encounter: encounterOps.html
+    EpisodeOfCare: episodeOfCareOps.html
     Location: locationOps.html
     Observation: observationOps.html
     Patient: patientOps.html

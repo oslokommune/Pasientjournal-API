@@ -1,5 +1,5 @@
-Profile: NoEHRCorePractitioner
+Profile: MunicipalPractitioner
 Parent: NoBasisPractitioner
-Id: no-ehr-core-practitioner
-Title: "no-ehr-core-practitioner"
-Description: "A Practitioner profile extending the no-basis-Practitioner profile for Norwegian EHR systems."
+Id: municipal-practitioner
+Title: "municipal-practitioner"
+Description: "A Practitioner profile extending the no-basis-Practitioner profile for the NO Municipal standard API"

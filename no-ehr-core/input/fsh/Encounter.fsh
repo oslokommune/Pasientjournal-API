@@ -1,8 +1,8 @@
-Profile: NoEHRCoreEncounter
+Profile: MunicipalEncounter
 Parent: Encounter
-Id: no-ehr-core-encounter
-Title: "no-ehr-core-encounter"
-Description: "An Encounter profile tailored for the NO Domain EHR Trust Framework."
+Id: municipal-encounter
+Title: "municipal-encounter"
+Description: "An Encounter profile created for the NO Municipal standard API."
 
 * ^status = #draft
 * subject only Reference(NoBasisPatient or Group)

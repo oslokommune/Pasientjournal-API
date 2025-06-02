@@ -14,7 +14,7 @@
         <th>Supported Includes</th>            
     </tr>
     <tr>
-        <td><a href="StructureDefinition-no-ehr-core-location.html">no-ehr-core-location</a></td>
+        <td><a href="StructureDefinition-municipal-location.html">municipal-location</a></td>
         <td>_id, birthdate, death-date, family, gender, given, identifier, name birthdate+name, 
         family+gender, birthdate+family, gender+name death-date+family   </td>
         <td></td>

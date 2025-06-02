@@ -1,5 +1,5 @@
-Profile: NoEHRCoreLocation
+Profile: MunicipalLocation
 Parent: NoBasisLocation
-Id: no-ehr-core-location
-Title: "no-ehr-core-location"
-Description: "A profile extending the no-basis-Location profile for Norwegian EHR systems."
+Id: municipal-location
+Title: "municipal-location"
+Description: "A profile extending the no-basis-Location profile for the NO Municipal standard API"

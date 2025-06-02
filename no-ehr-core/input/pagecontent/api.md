@@ -23,6 +23,7 @@ It is recommended that EHR vendors that implement the operations described in th
 [Composition Operations](compositionOps.html)   
 [DocumentReference Operations](documentReferenceOps.html)   
 [Encounter Operations](encounterOps.html)   
+[EpisodeOfCare Operations](episodeOfCareOps.html)   
 [Location Operations](locationOps.html)   
 [Observation Operations](OpservationOps.html)      
 [Patient Operations](patientOps.html)    

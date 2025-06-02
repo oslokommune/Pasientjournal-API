@@ -1,8 +1,8 @@
-Profile: NoEHRCorePatient
+Profile: MunicipalPatient
 Parent: NoBasisPatient
-Id: no-ehr-core-patient
-Title: "no-ehr-core-patient"
-Description: "A Patient profile extending the no-basis-Patient profile for Norwegian EHR systems."
+Id: municipal-patient
+Title: "municipal-patient"
+Description: "A Patient profile extending the no-basis-Patient profile for the NO Municipal standard API"
 
 * ^status = #draft
 * identifier 1..*
