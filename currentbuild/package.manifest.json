@@ -1,6 +1,6 @@
 {
-  "version" : "0.1.0",
+  "version" : "0.2.0",
   "fhirVersion" : ["4.0.1"],
-  "date" : "20241207204418",
-  "name" : "hl7.fhir.no.domain.ehr.core"
+  "date" : "20250603110503",
+  "name" : "hl7.fhir.no.municipal"
 }

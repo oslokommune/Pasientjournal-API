@@ -1,615 +1,726 @@
 {
-  "date" : "Sat, 07 Dec, 2024 20:44:56 +0000",
+  "date" : "Tue, 03 Jun, 2025 11:05:48 +0000",
   "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
   "files" : [
     {
-      "name" : "/fsh-generated/resources/ImplementationGuide-hl7.fhir.no.domain.ehr.core.json",
-      "size" : 6335,
+      "name" : "/fsh-generated/resources/ImplementationGuide-hl7.fhir.no.municipal.json",
+      "size" : 6934,
       "processes" : [
         {
           "activity" : "load",
-          "start" : 37,
-          "length" : 14
-        },
-        {
-          "activity" : "checkR4R4B",
-          "start" : 38,
-          "length" : 9
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 38,
-          "length" : 183
-        },
-        {
-          "activity" : "validate",
-          "start" : 42,
-          "length" : 622
-        },
-        {
-          "activity" : "checkConformanceResources",
-          "start" : 42,
-          "length" : 1
-        },
-        {
-          "activity" : "generate1",
-          "start" : 43,
-          "length" : 111
-        },
-        {
-          "activity" : "generate2",
-          "start" : 47,
-          "length" : 73
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 62,
-          "length" : 2
-        },
-        {
-          "activity" : "scanExamplesForR5",
-          "start" : 70,
-          "length" : 1
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-no-ehr-core-appointment.json",
-      "size" : 708,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 37,
+          "start" : 44,
           "length" : 15
         },
         {
-          "activity" : "loadDepInfo",
-          "start" : 37,
-          "length" : 1
-        },
-        {
-          "activity" : "load",
-          "start" : 37,
-          "length" : 8
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 37,
-          "length" : 44
+          "activity" : "checkR4R4B",
+          "start" : 45,
+          "length" : 5
         },
         {
           "activity" : "generateNarratives",
-          "start" : 38,
-          "length" : 41
+          "start" : 45,
+          "length" : 367
         },
         {
           "activity" : "validate",
-          "start" : 38,
-          "length" : 945
+          "start" : 53,
+          "length" : 8835
         },
         {
-          "activity" : "scanForUsageStats",
-          "start" : 42,
-          "length" : 2
-        },
-        {
-          "activity" : "generate1",
-          "start" : 43,
-          "length" : 226
-        },
-        {
-          "activity" : "generate2",
-          "start" : 47,
-          "length" : 2449
-        },
-        {
-          "activity" : "makeDependencies",
-          "start" : 58,
+          "activity" : "checkConformanceResources",
+          "start" : 62,
           "length" : 1
         },
         {
-          "activity" : "generateValidationPack",
+          "activity" : "generate1",
           "start" : 62,
-          "length" : 7
+          "length" : 81
+        },
+        {
+          "activity" : "generate2",
+          "start" : 66,
+          "length" : 52
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 84,
+          "length" : 4
         },
         {
           "activity" : "scanExamplesForR5",
-          "start" : 70,
+          "start" : 93,
           "length" : 1
         }
       ]
     },
     {
-      "name" : "fsh-generated/resources/StructureDefinition-no-ehr-core-careplan.json",
-      "size" : 934,
+      "name" : "fsh-generated/resources/StructureDefinition-municipal-appointment.json",
+      "size" : 709,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 37,
+          "start" : 44,
           "length" : 5
         },
         {
           "activity" : "load",
-          "start" : 37,
-          "length" : 3
-        },
-        {
-          "activity" : "load",
-          "start" : 37,
-          "length" : 1
+          "start" : 44,
+          "length" : 8
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 38,
-          "length" : 46
+          "start" : 44,
+          "length" : 51
         },
         {
-          "activity" : "generateNarratives",
-          "start" : 38,
-          "length" : 23
-        },
-        {
-          "activity" : "validate",
-          "start" : 39,
-          "length" : 326
-        },
-        {
-          "activity" : "scanForUsageStats",
-          "start" : 42,
+          "activity" : "load-configure",
+          "start" : 45,
           "length" : 1
         },
         {
+          "activity" : "generateNarratives",
+          "start" : 45,
+          "length" : 313
+        },
+        {
+          "activity" : "validate",
+          "start" : 48,
+          "length" : 1744
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 62,
+          "length" : 1
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 62,
+          "length" : 2
+        },
+        {
           "activity" : "generate1",
-          "start" : 43,
-          "length" : 288
+          "start" : 62,
+          "length" : 124
         },
         {
           "activity" : "generate2",
-          "start" : 49,
-          "length" : 860
+          "start" : 67,
+          "length" : 1547
+        },
+        {
+          "activity" : "generate2",
+          "start" : 74,
+          "length" : 1595
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 62,
-          "length" : 7
+          "start" : 84,
+          "length" : 8
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 93,
+          "length" : 1
         }
       ]
     },
     {
-      "name" : "fsh-generated/resources/StructureDefinition-no-ehr-core-composition.json",
-      "size" : 708,
+      "name" : "fsh-generated/resources/StructureDefinition-municipal-careplan.json",
+      "size" : 934,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 37,
+          "start" : 44,
           "length" : 2
         },
         {
-          "activity" : "load-configure",
-          "start" : 37,
+          "activity" : "load",
+          "start" : 44,
+          "length" : 4
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 44,
+          "length" : 72
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 45,
+          "length" : 238
+        },
+        {
+          "activity" : "validate",
+          "start" : 50,
+          "length" : 327
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 62,
           "length" : 1
         },
         {
+          "activity" : "generate1",
+          "start" : 63,
+          "length" : 133
+        },
+        {
+          "activity" : "generate2",
+          "start" : 68,
+          "length" : 645
+        },
+        {
+          "activity" : "generate2",
+          "start" : 75,
+          "length" : 517
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 84,
+          "length" : 8
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 93,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-municipal-composition.json",
+      "size" : 709,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 44,
+          "length" : 3
+        },
+        {
           "activity" : "load",
-          "start" : 37,
+          "start" : 44,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 44,
+          "length" : 1
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 44,
+          "length" : 64
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 46,
+          "length" : 277
+        },
+        {
+          "activity" : "validate",
+          "start" : 50,
+          "length" : 247
+        },
+        {
+          "activity" : "generate1",
+          "start" : 63,
+          "length" : 135
+        },
+        {
+          "activity" : "generate2",
+          "start" : 69,
+          "length" : 553
+        },
+        {
+          "activity" : "generate2",
+          "start" : 76,
+          "length" : 334
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 84,
+          "length" : 8
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 93,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-municipal-documentreference.json",
+      "size" : 764,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 44,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 44,
           "length" : 3
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 38,
+          "start" : 44,
           "length" : 54
         },
         {
           "activity" : "generateNarratives",
-          "start" : 38,
-          "length" : 35
+          "start" : 46,
+          "length" : 258
         },
         {
           "activity" : "validate",
-          "start" : 40,
-          "length" : 305
-        },
-        {
-          "activity" : "checkConformanceResources",
-          "start" : 42,
-          "length" : 1
-        },
-        {
-          "activity" : "generate1",
-          "start" : 43,
-          "length" : 269
-        },
-        {
-          "activity" : "generate2",
           "start" : 50,
-          "length" : 766
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 62,
-          "length" : 6
-        },
-        {
-          "activity" : "scanExamplesForR5",
-          "start" : 70,
-          "length" : 1
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-no-ehr-core-documentreference.json",
-      "size" : 763,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 37,
-          "length" : 3
-        },
-        {
-          "activity" : "load",
-          "start" : 37,
-          "length" : 2
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 38,
-          "length" : 37
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 38,
-          "length" : 30
-        },
-        {
-          "activity" : "validate",
-          "start" : 40,
-          "length" : 218
+          "length" : 211
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 42,
+          "start" : 62,
           "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 43,
-          "length" : 212
+          "start" : 63,
+          "length" : 115
         },
         {
           "activity" : "generate2",
-          "start" : 51,
-          "length" : 400
+          "start" : 69,
+          "length" : 256
+        },
+        {
+          "activity" : "generate2",
+          "start" : 76,
+          "length" : 231
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 62,
-          "length" : 6
-        },
-        {
-          "activity" : "scanProfilesForR5",
-          "start" : 70,
-          "length" : 1
-        },
-        {
-          "activity" : "scanExamplesForR5",
-          "start" : 70,
-          "length" : 1
+          "start" : 84,
+          "length" : 7
         }
       ]
     },
     {
-      "name" : "fsh-generated/resources/StructureDefinition-no-ehr-core-encounter.json",
-      "size" : 2066,
+      "name" : "fsh-generated/resources/StructureDefinition-municipal-encounter.json",
+      "size" : 2055,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 37,
-          "length" : 4
-        },
-        {
-          "activity" : "load",
-          "start" : 37,
+          "start" : 44,
           "length" : 3
         },
         {
-          "activity" : "generateSnapshots",
-          "start" : 38,
-          "length" : 48
+          "activity" : "load",
+          "start" : 44,
+          "length" : 5
         },
         {
-          "activity" : "checkR4R4B",
-          "start" : 38,
-          "length" : 1
+          "activity" : "generateSnapshots",
+          "start" : 44,
+          "length" : 69
         },
         {
           "activity" : "generateNarratives",
-          "start" : 38,
-          "length" : 23
+          "start" : 46,
+          "length" : 276
         },
         {
           "activity" : "validate",
-          "start" : 40,
+          "start" : 50,
           "length" : 316
         },
         {
-          "activity" : "generate1",
-          "start" : 44,
-          "length" : 328
-        },
-        {
-          "activity" : "generate2",
-          "start" : 51,
-          "length" : 596
-        },
-        {
-          "activity" : "generateValidationPack",
+          "activity" : "checkConformanceResources",
           "start" : 62,
-          "length" : 12
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-no-ehr-core-location.json",
-      "size" : 681,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 37,
-          "length" : 3
-        },
-        {
-          "activity" : "load",
-          "start" : 37,
-          "length" : 3
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 38,
-          "length" : 27
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 38,
-          "length" : 14
-        },
-        {
-          "activity" : "validate",
-          "start" : 41,
-          "length" : 143
+          "length" : 1
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 42,
+          "start" : 62,
           "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 44,
-          "length" : 200
+          "start" : 63,
+          "length" : 156
         },
         {
           "activity" : "generate2",
-          "start" : 52,
-          "length" : 301
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 62,
-          "length" : 4
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-no-ehr-core-observation.json",
-      "size" : 679,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 37,
-          "length" : 3
-        },
-        {
-          "activity" : "load",
-          "start" : 37,
-          "length" : 3
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 38,
-          "length" : 41
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 38,
-          "length" : 15
-        },
-        {
-          "activity" : "validate",
-          "start" : 41,
-          "length" : 228
-        },
-        {
-          "activity" : "generate1",
-          "start" : 44,
-          "length" : 245
+          "start" : 70,
+          "length" : 411
         },
         {
           "activity" : "generate2",
-          "start" : 52,
-          "length" : 565
+          "start" : 76,
+          "length" : 292
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 62,
-          "length" : 7
+          "start" : 84,
+          "length" : 9
         },
         {
           "activity" : "scanExamplesForR5",
-          "start" : 70,
+          "start" : 93,
           "length" : 1
         }
       ]
     },
     {
-      "name" : "fsh-generated/resources/StructureDefinition-no-ehr-core-organization.json",
-      "size" : 696,
+      "name" : "fsh-generated/resources/StructureDefinition-municipal-location.json",
+      "size" : 682,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 37,
+          "start" : 44,
           "length" : 3
         },
         {
           "activity" : "load",
-          "start" : 37,
+          "start" : 44,
+          "length" : 4
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 44,
+          "length" : 44
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 46,
+          "length" : 222
+        },
+        {
+          "activity" : "validate",
+          "start" : 51,
+          "length" : 152
+        },
+        {
+          "activity" : "generate1",
+          "start" : 63,
+          "length" : 82
+        },
+        {
+          "activity" : "generate2",
+          "start" : 70,
+          "length" : 210
+        },
+        {
+          "activity" : "generate2",
+          "start" : 77,
+          "length" : 138
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 84,
+          "length" : 5
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-municipal-observation.json",
+      "size" : 680,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 44,
           "length" : 2
         },
         {
+          "activity" : "load",
+          "start" : 44,
+          "length" : 3
+        },
+        {
           "activity" : "generateSnapshots",
-          "start" : 38,
-          "length" : 88
+          "start" : 44,
+          "length" : 58
         },
         {
           "activity" : "generateNarratives",
-          "start" : 38,
-          "length" : 18
+          "start" : 47,
+          "length" : 272
         },
         {
           "activity" : "validate",
-          "start" : 41,
-          "length" : 264
-        },
-        {
-          "activity" : "scanForUsageStats",
-          "start" : 42,
-          "length" : 1
+          "start" : 51,
+          "length" : 262
         },
         {
           "activity" : "generate1",
-          "start" : 44,
-          "length" : 254
+          "start" : 63,
+          "length" : 123
         },
         {
           "activity" : "generate2",
-          "start" : 53,
-          "length" : 606
+          "start" : 70,
+          "length" : 346
+        },
+        {
+          "activity" : "generate2",
+          "start" : 77,
+          "length" : 189
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 62,
-          "length" : 8
+          "start" : 84,
+          "length" : 9
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 93,
+          "length" : 1
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 93,
+          "length" : 1
         }
       ]
     },
     {
-      "name" : "fsh-generated/resources/StructureDefinition-no-ehr-core-patient.json",
-      "size" : 720,
+      "name" : "fsh-generated/resources/StructureDefinition-municipal-organization.json",
+      "size" : 1230,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 37,
+          "start" : 44,
           "length" : 3
         },
         {
-          "activity" : "scan",
-          "start" : 37,
+          "activity" : "load",
+          "start" : 44,
+          "length" : 5
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 44,
+          "length" : 72
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 45,
           "length" : 1
         },
         {
+          "activity" : "generateNarratives",
+          "start" : 47,
+          "length" : 290
+        },
+        {
+          "activity" : "validate",
+          "start" : 51,
+          "length" : 778
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 62,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 63,
+          "length" : 189
+        },
+        {
+          "activity" : "generate2",
+          "start" : 70,
+          "length" : 866
+        },
+        {
+          "activity" : "generate2",
+          "start" : 77,
+          "length" : 231
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 84,
+          "length" : 10
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-municipal-patient.json",
+      "size" : 721,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 44,
+          "length" : 3
+        },
+        {
           "activity" : "load",
-          "start" : 37,
+          "start" : 44,
+          "length" : 3
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 44,
+          "length" : 79
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 47,
+          "length" : 245
+        },
+        {
+          "activity" : "validate",
+          "start" : 52,
+          "length" : 391
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 62,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 63,
+          "length" : 199
+        },
+        {
+          "activity" : "generate2",
+          "start" : 71,
+          "length" : 401
+        },
+        {
+          "activity" : "generate2",
+          "start" : 77,
+          "length" : 311
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 84,
+          "length" : 12
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 93,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-municipal-practitioner.json",
+      "size" : 731,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 44,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 44,
+          "length" : 3
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 44,
+          "length" : 61
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 47,
+          "length" : 241
+        },
+        {
+          "activity" : "validate",
+          "start" : 52,
+          "length" : 1004
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 62,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 64,
+          "length" : 157
+        },
+        {
+          "activity" : "generate2",
+          "start" : 72,
+          "length" : 1647
+        },
+        {
+          "activity" : "generate2",
+          "start" : 77,
+          "length" : 207
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 84,
+          "length" : 9
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 93,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-municipal-service.json",
+      "size" : 1955,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 44,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 44,
           "length" : 4
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 38,
-          "length" : 94
+          "start" : 44,
+          "length" : 45
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 45,
+          "length" : 1
         },
         {
           "activity" : "generateNarratives",
-          "start" : 38,
-          "length" : 25
+          "start" : 48,
+          "length" : 240
         },
         {
           "activity" : "validate",
-          "start" : 41,
-          "length" : 397
+          "start" : 53,
+          "length" : 108
         },
         {
           "activity" : "checkConformanceResources",
-          "start" : 42,
-          "length" : 1
-        },
-        {
-          "activity" : "scanForUsageStats",
-          "start" : 42,
+          "start" : 62,
           "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 45,
-          "length" : 368
+          "start" : 64,
+          "length" : 99
         },
         {
           "activity" : "generate2",
-          "start" : 53,
-          "length" : 508
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 62,
-          "length" : 11
-        },
-        {
-          "activity" : "scanExamplesForR5",
-          "start" : 70,
-          "length" : 1
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/StructureDefinition-no-ehr-core-practitioner.json",
-      "size" : 730,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 37,
-          "length" : 3
-        },
-        {
-          "activity" : "load",
-          "start" : 37,
-          "length" : 3
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 38,
-          "length" : 92
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 38,
-          "length" : 20
-        },
-        {
-          "activity" : "validate",
-          "start" : 42,
-          "length" : 223
-        },
-        {
-          "activity" : "generate1",
-          "start" : 45,
-          "length" : 290
+          "start" : 73,
+          "length" : 187
         },
         {
           "activity" : "generate2",
-          "start" : 54,
-          "length" : 667
+          "start" : 78,
+          "length" : 106
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 62,
-          "length" : 8
+          "start" : 84,
+          "length" : 6
         }
       ]
     }

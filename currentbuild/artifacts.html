@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Artifacts Summary - NO Domain Core EHR API v0.1.0</title>
+    <title>Artifacts Summary - NO Municipal API v0.2.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,17 +41,18 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"4"}
-    h3,h4,h5,h6{--heading-prefix:"4.0"}</style>
+    <style type="text/css">h2{--heading-prefix:"5"}
+    h3,h4,h5,h6{--heading-prefix:"5.0"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
+
         <!-- Placeholder for child template header declarations -->
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">NO Domain Core EHR API</span>
+          <p><span style="font-size:12pt;font-weight:bold">NO Municipal API</span>
             <br/>
-            <span style="display:inline-block;">0.1.0 - ci-build
+            <span style="display:inline-block;">0.2.0 - ci-build
 
 
             </span>
@@ -87,6 +88,9 @@
   <li>
     <a href="artifacts.html">FHIR Profiles</a>
   </li>
+  <li>
+    <a href="useCaseMunicipalServices.html">Use Cases</a>
+  </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">API
       <b class="caret"></b>
@@ -112,6 +116,9 @@
       </li>
       <li>
         <a href="encounterOps.html">Encounter</a>
+      </li>
+      <li>
+        <a href="episodeOfCareOps.html">EpisodeOfCare</a>
       </li>
       <li>
         <a href="locationOps.html">Location</a>
@@ -159,7 +166,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">NO Domain Core EHR API - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://github.com/oslokommune/Pasientjournal-API/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">NO Municipal API - Local Development build (v0.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://github.com/oslokommune/Pasientjournal-API/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Artifacts Summary</h2>
   
   
@@ -187,92 +194,101 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-no-ehr-core-appointment.html"
-                  title="StructureDefinition/no-ehr-core-appointment">no-ehr-core-appointment</a>
+               <a href="StructureDefinition-municipal-appointment.html"
+                  title="StructureDefinition/municipal-appointment">municipal-appointment</a>
             </td>
             <td>
-<p>A profile extending the no-basis-Appointment profile for Norwegian EHR systems.</p>
+<p>A profile extending the no-basis-Appointment profile for the NO Municipal standard API</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-no-ehr-core-careplan.html"
-                  title="StructureDefinition/no-ehr-core-careplan">no-ehr-core-care-plan</a>
+               <a href="StructureDefinition-municipal-careplan.html"
+                  title="StructureDefinition/municipal-careplan">municipal-care-plan</a>
             </td>
             <td>
-<p>A CarePlan profile tailored for Norwegian EHR systems.</p>
+<p>A CarePlan profile created for the NO Municipal standard API</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-no-ehr-core-composition.html"
-                  title="StructureDefinition/no-ehr-core-composition">no-ehr-core-composition</a>
+               <a href="StructureDefinition-municipal-composition.html"
+                  title="StructureDefinition/municipal-composition">municipal-composition</a>
             </td>
             <td>
-<p>A profile extending the no-basis-Composition profile for Norwegian EHR systems.</p>
+<p>A profile extending the no-basis-Composition profile for the NO Municipal standard API</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-no-ehr-core-documentreference.html"
-                  title="StructureDefinition/no-ehr-core-documentreference">no-ehr-core-document-reference</a>
+               <a href="StructureDefinition-municipal-documentreference.html"
+                  title="StructureDefinition/municipal-documentreference">municipal-document-reference</a>
             </td>
             <td>
-<p>A profile extending the no-basis-DocumentReference profile for Norwegian EHR systems.</p>
+<p>A profile extending the no-basis-DocumentReference profile for the NO Municipal standard API</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-no-ehr-core-encounter.html"
-                  title="StructureDefinition/no-ehr-core-encounter">no-ehr-core-encounter</a>
+               <a href="StructureDefinition-municipal-encounter.html"
+                  title="StructureDefinition/municipal-encounter">municipal-encounter</a>
             </td>
             <td>
-<p>An Encounter profile tailored for the NO Domain EHR Trust Framework.</p>
+<p>An Encounter profile created for the NO Municipal standard API.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-no-ehr-core-location.html"
-                  title="StructureDefinition/no-ehr-core-location">no-ehr-core-location</a>
+               <a href="StructureDefinition-municipal-location.html"
+                  title="StructureDefinition/municipal-location">municipal-location</a>
             </td>
             <td>
-<p>A profile extending the no-basis-Location profile for Norwegian EHR systems.</p>
+<p>A profile extending the no-basis-Location profile for the NO Municipal standard API</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-no-ehr-core-observation.html"
-                  title="StructureDefinition/no-ehr-core-observation">no-ehr-core-observation</a>
+               <a href="StructureDefinition-municipal-observation.html"
+                  title="StructureDefinition/municipal-observation">municipal-observation</a>
             </td>
             <td>
-<p>An Observation profile tailored for Norwegian EHR systems.</p>
+<p>An Observation profile created for the NO Municipal standard API.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-no-ehr-core-organization.html"
-                  title="StructureDefinition/no-ehr-core-organization">no-ehr-core-organization</a>
+               <a href="StructureDefinition-municipal-organization.html"
+                  title="StructureDefinition/municipal-organization">municipal-organization</a>
             </td>
             <td>
-<p>An Organization profile tailored for Norwegian EHR systems.</p>
+<p>An Organization profile created for the NO Municipal standard API.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-no-ehr-core-patient.html"
-                  title="StructureDefinition/no-ehr-core-patient">no-ehr-core-patient</a>
+               <a href="StructureDefinition-municipal-patient.html"
+                  title="StructureDefinition/municipal-patient">municipal-patient</a>
             </td>
             <td>
-<p>A Patient profile extending the no-basis-Patient profile for Norwegian EHR systems.</p>
+<p>A Patient profile extending the no-basis-Patient profile for the NO Municipal standard API</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-no-ehr-core-practitioner.html"
-                  title="StructureDefinition/no-ehr-core-practitioner">no-ehr-core-practitioner</a>
+               <a href="StructureDefinition-municipal-practitioner.html"
+                  title="StructureDefinition/municipal-practitioner">municipal-practitioner</a>
             </td>
             <td>
-<p>A Practitioner profile extending the no-basis-Practitioner profile for Norwegian EHR systems.</p>
+<p>A Practitioner profile extending the no-basis-Practitioner profile for the NO Municipal standard API</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-municipal-service.html"
+                  title="StructureDefinition/municipal-service">municipal-service</a>
+            </td>
+            <td>
+<p>A EpisodeOfCare profile to represent the NO Municipal standard API.</p>
 </td>
          </tr>
       </tbody>
@@ -295,7 +311,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://labs.oslo.kommune.no/">Oslo Origo - Oslo kommune</a>.  Package hl7.fhir.no.domain.ehr.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Dec 7, 2024 20:44+0000">2024-12-07</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://labs.oslo.kommune.no/">Oslo Origo - Oslo kommune</a>.  Package hl7.fhir.no.municipal#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jun 3, 2025 11:05+0000">2025-06-03</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

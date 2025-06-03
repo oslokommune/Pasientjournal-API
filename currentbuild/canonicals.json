@@ -1,79 +1,86 @@
 [
   {
-    "id" : "hl7.fhir.no.domain.ehr.core",
+    "id" : "hl7.fhir.no.municipal",
     "type" : "ImplementationGuide",
-    "url" : "https://github.com/oslokommune/Pasientjournal-API/ImplementationGuide/hl7.fhir.no.domain.ehr.core",
-    "version" : "0.1.0",
-    "name" : "NoDomainEHRCore"
+    "url" : "https://github.com/oslokommune/Pasientjournal-API/ImplementationGuide/hl7.fhir.no.municipal",
+    "version" : "0.2.0",
+    "name" : "Municipal"
   },
   {
-    "id" : "no-ehr-core-appointment",
+    "id" : "municipal-appointment",
     "type" : "StructureDefinition",
-    "url" : "https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/no-ehr-core-appointment",
-    "version" : "0.1.0",
-    "name" : "NoEHRCoreAppointment"
+    "url" : "https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/municipal-appointment",
+    "version" : "0.2.0",
+    "name" : "MunicipalAppointment"
   },
   {
-    "id" : "no-ehr-core-careplan",
+    "id" : "municipal-careplan",
     "type" : "StructureDefinition",
-    "url" : "https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/no-ehr-core-careplan",
-    "version" : "0.1.0",
-    "name" : "NoEHRCoreCarePlan"
+    "url" : "https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/municipal-careplan",
+    "version" : "0.2.0",
+    "name" : "MunicipalCarePlan"
   },
   {
-    "id" : "no-ehr-core-composition",
+    "id" : "municipal-composition",
     "type" : "StructureDefinition",
-    "url" : "https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/no-ehr-core-composition",
-    "version" : "0.1.0",
-    "name" : "NoEHRCoreComposition"
+    "url" : "https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/municipal-composition",
+    "version" : "0.2.0",
+    "name" : "MunicipalComposition"
   },
   {
-    "id" : "no-ehr-core-documentreference",
+    "id" : "municipal-documentreference",
     "type" : "StructureDefinition",
-    "url" : "https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/no-ehr-core-documentreference",
-    "version" : "0.1.0",
-    "name" : "NoEHRCoreDocumentReference"
+    "url" : "https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/municipal-documentreference",
+    "version" : "0.2.0",
+    "name" : "MunicipalDocumentReference"
   },
   {
-    "id" : "no-ehr-core-encounter",
+    "id" : "municipal-encounter",
     "type" : "StructureDefinition",
-    "url" : "https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/no-ehr-core-encounter",
-    "version" : "0.1.0",
-    "name" : "NoEHRCoreEncounter"
+    "url" : "https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/municipal-encounter",
+    "version" : "0.2.0",
+    "name" : "MunicipalEncounter"
   },
   {
-    "id" : "no-ehr-core-location",
+    "id" : "municipal-location",
     "type" : "StructureDefinition",
-    "url" : "https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/no-ehr-core-location",
-    "version" : "0.1.0",
-    "name" : "NoEHRCoreLocation"
+    "url" : "https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/municipal-location",
+    "version" : "0.2.0",
+    "name" : "MunicipalLocation"
   },
   {
-    "id" : "no-ehr-core-observation",
+    "id" : "municipal-observation",
     "type" : "StructureDefinition",
-    "url" : "https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/no-ehr-core-observation",
-    "version" : "0.1.0",
-    "name" : "NoEHRCoreObservation"
+    "url" : "https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/municipal-observation",
+    "version" : "0.2.0",
+    "name" : "MunicipalObservation"
   },
   {
-    "id" : "no-ehr-core-organization",
+    "id" : "municipal-organization",
     "type" : "StructureDefinition",
-    "url" : "https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/no-ehr-core-organization",
-    "version" : "0.1.0",
-    "name" : "NoEHRCoreOrganization"
+    "url" : "https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/municipal-organization",
+    "version" : "0.2.0",
+    "name" : "MunicipalOrganization"
   },
   {
-    "id" : "no-ehr-core-patient",
+    "id" : "municipal-patient",
     "type" : "StructureDefinition",
-    "url" : "https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/no-ehr-core-patient",
-    "version" : "0.1.0",
-    "name" : "NoEHRCorePatient"
+    "url" : "https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/municipal-patient",
+    "version" : "0.2.0",
+    "name" : "MunicipalPatient"
   },
   {
-    "id" : "no-ehr-core-practitioner",
+    "id" : "municipal-practitioner",
     "type" : "StructureDefinition",
-    "url" : "https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/no-ehr-core-practitioner",
-    "version" : "0.1.0",
-    "name" : "NoEHRCorePractitioner"
+    "url" : "https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/municipal-practitioner",
+    "version" : "0.2.0",
+    "name" : "MunicipalPractitioner"
+  },
+  {
+    "id" : "municipal-service",
+    "type" : "StructureDefinition",
+    "url" : "https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/municipal-service",
+    "version" : "0.2.0",
+    "name" : "MunicipalService"
   }
 ]

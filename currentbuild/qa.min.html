@@ -1,12 +1,17 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 3, errors = 10, warn = 23, info = 0-->
+<!-- broken links = 4, errors = 11, warn = 35, info = 2-->
 <head>
-  <title>NoDomainEHRCore : Validation Results</title>
+  <title>Municipal : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
+  <meta charset="utf-8"/>
   <style>
     span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
     span.toggle  { background-color: #e6f2ff; color: black; border: solid 1px #0056b3; padding: 2px; font-size: 10px }
+    button { padding: 0px 8px; font-size: 12px; cursor: pointer; border-radius: 2px; border: 1px solid #ccc; background-color: #f0f0f0 }
+    button:hover { background-color: #e0e0e0; }
+    .code-value { display: inline; }
+    .code-hidden { display: none; }
     span.toggle  { font-size: 10px }
   </style>
   <script>
@@ -32,29 +37,39 @@
         span.innerHTML = 'Show Validation Information';
       }
     }
+    function toggleCodes() {
+      const codes = document.getElementsByClassName('code-value');
+      for (let code of codes) {
+        code.classList.toggle('code-hidden');
+      }
+    }
   </script>
 </head>
 <body style="margin: 20px; background-color: #ffffff">
- <h1>Validation Results for NoDomainEHRCore</h1>
- <p>Generated Sat Dec 07 20:45:29 UTC 2024, FHIR version 4.0.1 for hl7.fhir.no.domain.ehr.core#0.1.0 (canonical = <a href="https://github.com/oslokommune/Pasientjournal-API">https://github.com/oslokommune/Pasientjournal-API</a> (<a href="https://github.com/oslokommune/Pasientjournal-API/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
+ <h1>Validation Results for Municipal</h1>
+ <p>Generated Tue Jun 03 11:06:37 UTC 2025, FHIR version 4.0.1 for hl7.fhir.no.municipal#0.2.0 (canonical = <a href="https://github.com/oslokommune/Pasientjournal-API">https://github.com/oslokommune/Pasientjournal-API</a> (<a href="https://github.com/oslokommune/Pasientjournal-API/history.html">history</a>)). See <a href="qa.html">Full QA Report</a> &amp; <a href="qa-ipreview.html">IP</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
- <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.7.5</span></td></tr>
- <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = hl7.fhir.no.domain.ehr.core, Canonical = https://github.com/oslokommune/Pasientjournal-API</td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v2.0.4</span></td></tr>
+ <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = hl7.fhir.no.municipal, Canonical = https://github.com/oslokommune/Pasientjournal-API</td></tr>
  <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
+ <tr><td>Language Info:</td><td>This IG has no language information</td></tr>
  <tr><td>Publication Request:</td><td><ul><li><span title="Not Found">This IG has never been published</span> <img src="information.png" height="16px" width="16px"/></li>
+<li>This IG has never been published, so the version should start with '0.' or include a patch version e.g. '-ballot' <img src="icon-warning.png" height="16px" width="16px"/></li>
 <li>No publication request found <img src="information.png" height="16px" width="16px"/></li>
 </ul>
 </td></tr>
  <tr><td>Supressed Messages:</td><td>No Suppressed Issues
 </td></tr>
- <tr><td>Dependency Checks:</td><td><div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/__w/Pasientjournal-API/Pasientjournal-API/no-ehr-core/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.no.domain.ehr.core</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0.1.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">https://github.com/oslokommune/Pasientjournal-API</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/__w/Pasientjournal-API/Pasientjournal-API/no-ehr-core/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.terminology.r4</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">6.1.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org/6.1.0</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/__w/Pasientjournal-API/Pasientjournal-API/no-ehr-core/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.uv.extensions.r4</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">5.1.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions/5.1.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/__w/Pasientjournal-API/Pasientjournal-API/no-ehr-core/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4Xu3IIQEAAAgDsHd9/w4EQIOamFnaBgAA4MMKAACAKwNp30CqZFfFmwAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.no.basis</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">2.2.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="Not yet released">U</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
-</table><para>Templates: fhir.base.template#current. Tools: 0.3.0</para></div></td></tr>
+ <tr><td>Dependency Checks:</td><td><div><table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="dep" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top" data-fhir="generated-heirarchy"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR</span></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/__w/Pasientjournal-API/Pasientjournal-API/no-ehr-core/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.no.municipal</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0.2.0</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">https://github.com/oslokommune/Pasientjournal-API</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/__w/Pasientjournal-API/Pasientjournal-API/no-ehr-core/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAACxMAAAsTAQCanBgAAACwSURBVDhP7ZLBDsIwCIaLZz34xG3f2cQYo5UfYalJoY07ePFL4GcbpZSVWmvJgwifG+njkLDACgfVIehAQ5ffdMDvxSS2Dmqty62UUmS1rIWD8UuWd9xxVt1AnoaSGx6Buap+0G80K3BTtbtwhLPZQL0CSIA9OwUXON7dZkBeASTAThb3bffMjnCHGy00ZgUeqi5f3YOcsw01vsqYMrMljwgLrBDOwP53xL+D3R2k9ALHsmr3Yu73+gAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.terminology.r4</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">6.4.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org/6.4.0</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="aaa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/__w/Pasientjournal-API/Pasientjournal-API/no-ehr-core/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzMPbYccAgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAMElEQVQ4y+3OQREAIBDDwAv+PQcFFN5MIyCzqHMKUGVCpMFLK97heq+gggoq+EiwAVjvMhFGmlEUAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.uv.extensions.r4</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">5.2.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions/5.2.0</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ab" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/__w/Pasientjournal-API/Pasientjournal-API/no-ehr-core/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.uv.extensions.r4</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">5.2.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions/5.2.0</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">see above</td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ac" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/__w/Pasientjournal-API/Pasientjournal-API/no-ehr-core/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4Xu3IIQEAAAgDsHd9/w4EQIOamFnaBgAA4MMKAACAKwNp30CqZFfFmwAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.no.basis</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">2.2.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="Not yet released">U</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+</table><para>Templates: fhir.base.template#current. Tools: 0.5.0</para></div></td></tr>
+ <tr><td>Related IGs:</td><td>n/a</td></tr>
  <tr><td>Dependent IGs:</td><td><a href="qa-dep.html">no references</a></td></tr>
  <tr><td>Global Profiles:</td><td>(none declared)</td></tr>
- <tr><td>Terminology Server(s):</td><td><a href="http://tx.fhir.org/r4">http://tx.fhir.org/r4</a> (<a href="qa-txservers.html">details</a>)</td></tr>
+ <tr><td>Terminology Server(s):</td><td><a href="http://tx.fhir.org/r4">http://tx.fhir.org/r4</a>, <a href="https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> (<a href="qa-txservers.html">details</a>)</td></tr>
  <tr><td>HTA Analysis:</td><td><i>no Non-HL7 references found</i></td></tr>
  <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
  <tr><td>Draft Dependencies:</td><td><ul>
@@ -62,20 +77,20 @@
 hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-parameter-code.html">GuideParameterCode</a>
  (15 uses),     <a href="http://hl7.org/fhir/R4/appointment.html">Appointment</a>
  (6 uses),     <a href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a>
- (12 uses),     <a href="http://hl7.org/fhir/R4/valueset-appointmentstatus.html">AppointmentStatus</a>
+ (13 uses),     <a href="http://hl7.org/fhir/R4/valueset-appointmentstatus.html">AppointmentStatus</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-appointment-cancellation-reason.html">AppointmentCancellationReason</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-service-category.html">ServiceCategory</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-service-type.html">ServiceType</a>
  (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-reason.html">EncounterReasonCodes</a>
  (2 uses),     <a href="http://hl7.org/fhir/R4/condition.html">Condition</a>
- (5 uses),     <a href="http://hl7.org/fhir/R4/procedure.html">Procedure</a>
+ (6 uses),     <a href="http://hl7.org/fhir/R4/procedure.html">Procedure</a>
  (4 uses),     <a href="http://hl7.org/fhir/R4/immunizationrecommendation.html">ImmunizationRecommendation</a>
  (3 uses),     <a href="http://hl7.org/fhir/R4/slot.html">Slot</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a>
- (4 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-participant-type.html">ParticipantType</a>
+ (5 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-participant-type.html">ParticipantType</a>
  (2 uses),     <a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a>
- (12 uses),     <a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a>
- (11 uses),     <a href="http://hl7.org/fhir/R4/relatedperson.html">RelatedPerson</a>
+ (13 uses),     <a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a>
+ (12 uses),     <a href="http://hl7.org/fhir/R4/relatedperson.html">RelatedPerson</a>
  (10 uses),     <a href="http://hl7.org/fhir/R4/device.html">Device</a>
  (10 uses),     <a href="http://hl7.org/fhir/R4/healthcareservice.html">HealthcareService</a>
  (2 uses),     <a href="http://hl7.org/fhir/R4/location.html">Location</a>
@@ -92,8 +107,8 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
  (1 uses),     <a href="http://hl7.org/fhir/R4/group.html">Group</a>
  (6 uses),     <a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a>
  (6 uses),     <a href="http://hl7.org/fhir/R4/organization.html">Organization</a>
- (31 uses),     <a href="http://hl7.org/fhir/R4/careteam.html">CareTeam</a>
- (5 uses),     <a href="http://hl7.org/fhir/R4/goal.html">Goal</a>
+ (32 uses),     <a href="http://hl7.org/fhir/R4/careteam.html">CareTeam</a>
+ (6 uses),     <a href="http://hl7.org/fhir/R4/goal.html">Goal</a>
  (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-care-plan-activity-outcome.html">CarePlanActivityOutcome</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/communicationrequest.html">CommunicationRequest</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/devicerequest.html">DeviceRequest</a>
@@ -121,11 +136,11 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-list-empty-reason.html">ListEmptyReasons</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-document-reference-status.html">DocumentReferenceStatus</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/episodeofcare.html">EpisodeOfCare</a>
- (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-status.html">EncounterStatus</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-status.html">EncounterStatus</a>
  (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-type.html">EncounterType</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-diagnosis-role.html">DiagnosisRole</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/account.html">Account</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-admit-source.html">AdmitSource</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/account.html">Account</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-admit-source.html">AdmitSource</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-diet.html">Diet</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-special-courtesy.html">SpecialCourtesy</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-special-arrangements.html">SpecialArrangements</a>
@@ -153,11 +168,9 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
  (2 uses),     <a href="http://hl7.org/fhir/R4/media.html">Media</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-organization-type.html">OrganizationType</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-contactentity-type.html">ContactEntityType</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-episode-of-care-status.html">EpisodeOfCareStatus</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-episodeofcare-type.html">EpisodeOfCareType</a>
  (1 uses)
-  </li>
-  <li>
-hl7.fhir.uv.tools.r4#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/StructureDefinition-resource-sort.html">ResourceSortExt</a>
- (10 uses)
   </li>
 </ul>
 </td></tr>
@@ -166,47 +179,50 @@ hl7.fhir.uv.tools.r4#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/Structu
  <tr><td>IPA Comparison:</td><td> n/a</td></tr>
  <tr><td>IPS Comparison:</td><td> n/a</td></tr>
  <tr><td>Validation Flags:</td><td> On: autoLoad; Off: hintAboutNonMustSupport, anyExtensionsAllowed, checkAggregation, showReferenceMessages, noExperimentalContent, displayWarnings</td></tr>
- <tr><td>Summary:</td><td> errors = 10, warn = 23, info = 0, broken links = 3</td></tr>
+ <tr><td>Summary:</td><td> errors = 11, warn = 35, info = 2, broken links = 4, pinned = n/a.  <button onclick="toggleCodes()">Show Message Ids</button></td></tr>
 </table>
  <table class="grid">
    <tr>
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>3</b></td><td><b>12</b></td><td><b>0</b></td>
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>4</b></td><td><b>12</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#___w_Pasientjournal-API_Pasientjournal-API_no-ehr-core_fsh-generated_resources_ImplementationGuide-hl7.fhir.no.domain.ehr.core"><b>/__w/Pasientjournal-API/Pasientjournal-API/no-ehr-core/fsh-generated/resources/ImplementationGuide-hl7.fhir.no.domain.ehr.core</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+     <td><a href="#___w_Pasientjournal-API_Pasientjournal-API_no-ehr-core_fsh-generated_resources_ImplementationGuide-hl7.fhir.no.municipal"><b>/__w/Pasientjournal-API/Pasientjournal-API/no-ehr-core/fsh-generated/resources/ImplementationGuide-hl7.fhir.no.municipal</b></a></td><td><b>0</b></td><td><b>3</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#___w_Pasientjournal-API_Pasientjournal-API_no-ehr-core_fsh-generated_resources_StructureDefinition-no-ehr-core-appointment"><b>/__w/Pasientjournal-API/Pasientjournal-API/no-ehr-core/fsh-generated/resources/StructureDefinition-no-ehr-core-appointment</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>0</b></td>
+     <td><a href="#___w_Pasientjournal-API_Pasientjournal-API_no-ehr-core_fsh-generated_resources_StructureDefinition-municipal-appointment"><b>/__w/Pasientjournal-API/Pasientjournal-API/no-ehr-core/fsh-generated/resources/StructureDefinition-municipal-appointment</b></a></td><td><b>1</b></td><td><b>4</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#___w_Pasientjournal-API_Pasientjournal-API_no-ehr-core_fsh-generated_resources_StructureDefinition-no-ehr-core-careplan"><b>/__w/Pasientjournal-API/Pasientjournal-API/no-ehr-core/fsh-generated/resources/StructureDefinition-no-ehr-core-careplan</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>0</b></td>
+     <td><a href="#___w_Pasientjournal-API_Pasientjournal-API_no-ehr-core_fsh-generated_resources_StructureDefinition-municipal-careplan"><b>/__w/Pasientjournal-API/Pasientjournal-API/no-ehr-core/fsh-generated/resources/StructureDefinition-municipal-careplan</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#___w_Pasientjournal-API_Pasientjournal-API_no-ehr-core_fsh-generated_resources_StructureDefinition-no-ehr-core-composition"><b>/__w/Pasientjournal-API/Pasientjournal-API/no-ehr-core/fsh-generated/resources/StructureDefinition-no-ehr-core-composition</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>0</b></td>
+     <td><a href="#___w_Pasientjournal-API_Pasientjournal-API_no-ehr-core_fsh-generated_resources_StructureDefinition-municipal-composition"><b>/__w/Pasientjournal-API/Pasientjournal-API/no-ehr-core/fsh-generated/resources/StructureDefinition-municipal-composition</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#___w_Pasientjournal-API_Pasientjournal-API_no-ehr-core_fsh-generated_resources_StructureDefinition-no-ehr-core-documentreference"><b>/__w/Pasientjournal-API/Pasientjournal-API/no-ehr-core/fsh-generated/resources/StructureDefinition-no-ehr-core-documentreference</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>0</b></td>
+     <td><a href="#___w_Pasientjournal-API_Pasientjournal-API_no-ehr-core_fsh-generated_resources_StructureDefinition-municipal-documentreference"><b>/__w/Pasientjournal-API/Pasientjournal-API/no-ehr-core/fsh-generated/resources/StructureDefinition-municipal-documentreference</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#___w_Pasientjournal-API_Pasientjournal-API_no-ehr-core_fsh-generated_resources_StructureDefinition-no-ehr-core-encounter"><b>/__w/Pasientjournal-API/Pasientjournal-API/no-ehr-core/fsh-generated/resources/StructureDefinition-no-ehr-core-encounter</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>0</b></td>
+     <td><a href="#___w_Pasientjournal-API_Pasientjournal-API_no-ehr-core_fsh-generated_resources_StructureDefinition-municipal-encounter"><b>/__w/Pasientjournal-API/Pasientjournal-API/no-ehr-core/fsh-generated/resources/StructureDefinition-municipal-encounter</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#___w_Pasientjournal-API_Pasientjournal-API_no-ehr-core_fsh-generated_resources_StructureDefinition-no-ehr-core-location"><b>/__w/Pasientjournal-API/Pasientjournal-API/no-ehr-core/fsh-generated/resources/StructureDefinition-no-ehr-core-location</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>0</b></td>
+     <td><a href="#___w_Pasientjournal-API_Pasientjournal-API_no-ehr-core_fsh-generated_resources_StructureDefinition-municipal-location"><b>/__w/Pasientjournal-API/Pasientjournal-API/no-ehr-core/fsh-generated/resources/StructureDefinition-municipal-location</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#___w_Pasientjournal-API_Pasientjournal-API_no-ehr-core_fsh-generated_resources_StructureDefinition-no-ehr-core-observation"><b>/__w/Pasientjournal-API/Pasientjournal-API/no-ehr-core/fsh-generated/resources/StructureDefinition-no-ehr-core-observation</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>0</b></td>
+     <td><a href="#___w_Pasientjournal-API_Pasientjournal-API_no-ehr-core_fsh-generated_resources_StructureDefinition-municipal-observation"><b>/__w/Pasientjournal-API/Pasientjournal-API/no-ehr-core/fsh-generated/resources/StructureDefinition-municipal-observation</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#___w_Pasientjournal-API_Pasientjournal-API_no-ehr-core_fsh-generated_resources_StructureDefinition-no-ehr-core-organization"><b>/__w/Pasientjournal-API/Pasientjournal-API/no-ehr-core/fsh-generated/resources/StructureDefinition-no-ehr-core-organization</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>0</b></td>
+     <td><a href="#___w_Pasientjournal-API_Pasientjournal-API_no-ehr-core_fsh-generated_resources_StructureDefinition-municipal-organization"><b>/__w/Pasientjournal-API/Pasientjournal-API/no-ehr-core/fsh-generated/resources/StructureDefinition-municipal-organization</b></a></td><td><b>1</b></td><td><b>3</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#___w_Pasientjournal-API_Pasientjournal-API_no-ehr-core_fsh-generated_resources_StructureDefinition-no-ehr-core-patient"><b>/__w/Pasientjournal-API/Pasientjournal-API/no-ehr-core/fsh-generated/resources/StructureDefinition-no-ehr-core-patient</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>0</b></td>
+     <td><a href="#___w_Pasientjournal-API_Pasientjournal-API_no-ehr-core_fsh-generated_resources_StructureDefinition-municipal-patient"><b>/__w/Pasientjournal-API/Pasientjournal-API/no-ehr-core/fsh-generated/resources/StructureDefinition-municipal-patient</b></a></td><td><b>1</b></td><td><b>2</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#___w_Pasientjournal-API_Pasientjournal-API_no-ehr-core_fsh-generated_resources_StructureDefinition-no-ehr-core-practitioner"><b>/__w/Pasientjournal-API/Pasientjournal-API/no-ehr-core/fsh-generated/resources/StructureDefinition-no-ehr-core-practitioner</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>0</b></td>
+     <td><a href="#___w_Pasientjournal-API_Pasientjournal-API_no-ehr-core_fsh-generated_resources_StructureDefinition-municipal-practitioner"><b>/__w/Pasientjournal-API/Pasientjournal-API/no-ehr-core/fsh-generated/resources/StructureDefinition-municipal-practitioner</b></a></td><td><b>1</b></td><td><b>4</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#___w_Pasientjournal-API_Pasientjournal-API_no-ehr-core_fsh-generated_resources_StructureDefinition-municipal-service"><b>/__w/Pasientjournal-API/Pasientjournal-API/no-ehr-core/fsh-generated/resources/StructureDefinition-municipal-service</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>0</b></td>
    </tr>
 </table>
 <hr/>
@@ -215,83 +231,104 @@ hl7.fhir.uv.tools.r4#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/Structu
  <div style="border: 1px grey solid; display: none" id="v"></div>
  <table class="grid">
    <tr style="background-color: #ffebcc">
-     <td><b>Appointment.appointmentType.coding</b></td><td><b>warning</b></td><td title=""><b>The reference urn:oid:2.16.578.1.12.4.1.1.8406 could not be resolved</b></td>
+     <td><b>Appointment.appointmentType.coding</b></td><td><b>warning</b></td><td><b>The reference urn:oid:2.16.578.1.12.4.1.1.8406 could not be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Appointment.appointmentType.coding</b></td><td><b>warning</b></td><td title=""><b>The reference urn:oid:2.16.578.1.12.4.1.1.8432 could not be resolved</b></td>
+     <td><b>Appointment.appointmentType.coding</b></td><td><b>warning</b></td><td><b>The reference urn:oid:2.16.578.1.12.4.1.1.8432 could not be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Appointment.appointmentType.coding</b></td><td><b>warning</b></td><td title=""><b>The reference urn:oid:2.16.578.1.12.4.1.1.7617 could not be resolved</b></td>
+     <td><b>Appointment.appointmentType.coding</b></td><td><b>warning</b></td><td><b>The reference urn:oid:2.16.578.1.12.4.1.1.7617 could not be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Organization.type</b></td><td><b>warning</b></td><td title=""><b>The reference urn:oid:2.16.578.1.12.4.1.1.8628 could not be resolved</b></td>
+     <td><b>Organization.type</b></td><td><b>warning</b></td><td><b>The reference urn:oid:2.16.578.1.12.4.1.1.8628 could not be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Organization.type</b></td><td><b>warning</b></td><td title=""><b>The reference urn:oid:2.16.578.1.12.4.1.1.8624 could not be resolved</b></td>
+     <td><b>Organization.type</b></td><td><b>warning</b></td><td><b>The reference urn:oid:2.16.578.1.12.4.1.1.8624 could not be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Practitioner.qualification.code.coding</b></td><td><b>warning</b></td><td title=""><b>The reference urn:oid:2.16.578.1.12.4.1.1.9060 could not be resolved</b></td>
+     <td><b>Practitioner.qualification.code.coding</b></td><td><b>warning</b></td><td><b>The reference urn:oid:2.16.578.1.12.4.1.1.9060 could not be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Practitioner.qualification.code.coding</b></td><td><b>warning</b></td><td title=""><b>The reference urn:oid:2.16.578.1.12.4.1.1.7704 could not be resolved</b></td>
+     <td><b>Practitioner.qualification.code.coding</b></td><td><b>warning</b></td><td><b>The reference urn:oid:2.16.578.1.12.4.1.1.7704 could not be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Practitioner.qualification.code.coding</b></td><td><b>warning</b></td><td title=""><b>The reference urn:oid:2.16.578.1.12.4.1.1.7426 could not be resolved</b></td>
+     <td><b>Practitioner.qualification.code.coding</b></td><td><b>warning</b></td><td><b>The reference urn:oid:2.16.578.1.12.4.1.1.7426 could not be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="api.html#l374">output&#8203;/api&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 215, column 2</a></b></td><td><b>error</b></td><td><b>The link 'OpservationOps.html' for &quot;Observation Operations&quot; cannot be resolved</b></td>
+     <td><b><a href="api.html#l386">output&#8203;/api&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 223, column 2</a></b></td><td><b>error</b></td><td><b>The link 'OpservationOps.html' for &quot;Observation Operations&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="documentReferenceOps.html#l344">output&#8203;/documentReferenceOps&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 196, column 14</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-no-ehr-core-document-reference.html' for &quot;no-ehr-core-document-reference&quot; cannot be resolved</b></td>
+     <td><b><a href="documentReferenceOps.html#l356">output&#8203;/documentReferenceOps&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 203, column 14</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-municipal-document-reference.html' for &quot;municipal-document-reference&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="patientOps.html#l322">output&#8203;/patientOps&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 183, column 30</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-no-ehr-core-patient.html'' for &quot;patient&quot; cannot be resolved</b></td>
+     <td><b><a href="patientOps.html#l334">output&#8203;/patientOps&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 190, column 30</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-municipal-patient.html'' for &quot;patient&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="useCaseMunicipalServices.html#l333">output&#8203;/useCaseMunicipalServices&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 193, column 130</a></b></td><td><b>error</b></td><td><b>The link '&quot;https://finnkode.helsedirektoratet.no/adm/collections/9151&quot;' for &quot;code repository&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>1</b></td><td><b>warning</b></td><td title=""><b>The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide</b></td>
+     <td><b>1</b></td><td><b>warning</b></td><td><b>The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>2</b></td><td><b>warning</b></td><td title=""><b>An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide</b></td>
+     <td><b>2</b></td><td><b>warning</b></td><td><b>An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>3</b></td><td><b>warning</b></td><td title=""><b>An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide</b></td>
+     <td><b>3</b></td><td><b>warning</b></td><td><b>An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>4</b></td><td><b>warning</b></td><td title=""><b>The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide</b></td>
+     <td><b>4</b></td><td><b>warning</b></td><td><b>The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
 </table>
 <hr/>
-<a name="___w_Pasientjournal-API_Pasientjournal-API_no-ehr-core_fsh-generated_resources_ImplementationGuide-hl7.fhir.no.domain.ehr.core"> </a>
-<h2><a href="index.html">fsh-generated/resources/ImplementationGuide-hl7.fhir.no.domain.ehr.core.json</a> <span id="svi1" class="toggle" onclick="toggle('vi1')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi1')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi1"><ul style="font-size: 7px"><li>ImplementationGuide/hl7.fhir.no.domain.ehr.core: ImplementationGuide: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/implementationguide.html">ImplementationGuide</a></li></ul>
+<a name="___w_Pasientjournal-API_Pasientjournal-API_no-ehr-core_fsh-generated_resources_ImplementationGuide-hl7.fhir.no.municipal"> </a>
+<h2><a href="index.html">fsh-generated/resources/ImplementationGuide-hl7.fhir.no.municipal.json</a> <span id="svi1" class="toggle" onclick="toggle('vi1')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi1')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi1"><ul style="font-size: 7px"><li>ImplementationGuide/hl7.fhir.no.municipal: ImplementationGuide: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/implementationguide.html">ImplementationGuide</a></li></ul>
 </div>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ImplementationGuide.jurisdiction</b></td><td><b>warning</b></td><td title="RESOURCE_JURISDICTION_MISMATCH"><b>The resource should declare its jurisdiction to match the package id (hl7.fhir.no.domain.ehr.core, jurisdiction = urn:iso:std:iso:3166#NO instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO &quot;null&quot;')</b></td>
+     <td><b>ImplementationGuide&#8203;.dependsOn[2]&#8203;.uri (l1&#8203;/c2084)</b></td><td><b>warning</b></td><td><b>A definition could not be found for Canonical URL 'http://fhir.org/packages/hl7.fhir.no.basis/ImplementationGuide/hl7.fhir.no.basis'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ImplementationGuide&#8203;.dependsOn[2] (l1&#8203;/c2135)</b></td><td><b>warning</b></td><td><b>The canonical URL http://fhir.org/packages/hl7.fhir.no.basis/ImplementationGuide/hl7.fhir.no.basis doesn't point to an actual ImplementationGuide resource</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">IG_DEPENDENCY_INVALID_URL</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ImplementationGuide.jurisdiction</b></td><td><b>warning</b></td><td><b>The resource should declare its jurisdiction to match the package id (hl7.fhir.no.municipal, jurisdiction = urn:iso:std:iso:3166#NO instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO &quot;null&quot;')</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">RESOURCE_JURISDICTION_MISMATCH</span></td>
    </tr>
 </table>
 <hr/>
-<a name="___w_Pasientjournal-API_Pasientjournal-API_no-ehr-core_fsh-generated_resources_StructureDefinition-no-ehr-core-appointment"> </a>
-<h2><a href="StructureDefinition-no-ehr-core-appointment.html">fsh-generated/resources/StructureDefinition-no-ehr-core-appointment.json</a> <span id="svi2" class="toggle" onclick="toggle('vi2')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi2')">(1)</span></h2>
+<a name="___w_Pasientjournal-API_Pasientjournal-API_no-ehr-core_fsh-generated_resources_StructureDefinition-municipal-appointment"> </a>
+<h2><a href="StructureDefinition-municipal-appointment.html">fsh-generated/resources/StructureDefinition-municipal-appointment.json</a> <span id="svi2" class="toggle" onclick="toggle('vi2')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi2')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi2"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition.jurisdiction</b></td><td><b>error</b></td><td title="RESOURCE_JURISDICTION_MISMATCH"><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.no.domain.ehr.core, jurisdiction = urn:iso:std:iso:3166#NO instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO &quot;null&quot;')</b></td>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[4]&#8203;.binding&#8203;.extension[0] (l1&#8203;/c16950)</b></td><td><b>information</b></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DEPENDS_ON_DEPRECATED</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/github&#8203;.com&#8203;/oslokommune&#8203;/Pasientjournal-API&#8203;/StructureDefinition&#8203;/no-ehr-core-appointment')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[22]&#8203;.binding&#8203;.valueSet (l1&#8203;/c39444)</b></td><td><b>warning</b></td><td><b>A definition could not be found for Canonical URL 'urn:oid:2.16.578.1.12.4.1.1.8406'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[23]&#8203;.binding&#8203;.valueSet (l1&#8203;/c40804)</b></td><td><b>warning</b></td><td><b>A definition could not be found for Canonical URL 'urn:oid:2.16.578.1.12.4.1.1.8432'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[24]&#8203;.binding&#8203;.valueSet (l1&#8203;/c42173)</b></td><td><b>warning</b></td><td><b>A definition could not be found for Canonical URL 'urn:oid:2.16.578.1.12.4.1.1.7617'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.jurisdiction</b></td><td><b>error</b></td><td><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.no.municipal, jurisdiction = urn:iso:std:iso:3166#NO instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO &quot;null&quot;')</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">RESOURCE_JURISDICTION_MISMATCH</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/github&#8203;.com&#8203;/oslokommune&#8203;/Pasientjournal-API&#8203;/StructureDefinition&#8203;/municipal-appointment')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
 </table>
 <hr/>
-<a name="___w_Pasientjournal-API_Pasientjournal-API_no-ehr-core_fsh-generated_resources_StructureDefinition-no-ehr-core-careplan"> </a>
-<h2><a href="StructureDefinition-no-ehr-core-careplan.html">fsh-generated/resources/StructureDefinition-no-ehr-core-careplan.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(1)</span></h2>
+<a name="___w_Pasientjournal-API_Pasientjournal-API_no-ehr-core_fsh-generated_resources_StructureDefinition-municipal-careplan"> </a>
+<h2><a href="StructureDefinition-municipal-careplan.html">fsh-generated/resources/StructureDefinition-municipal-careplan.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
@@ -299,15 +336,15 @@ hl7.fhir.uv.tools.r4#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/Structu
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition.jurisdiction</b></td><td><b>error</b></td><td title="RESOURCE_JURISDICTION_MISMATCH"><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.no.domain.ehr.core, jurisdiction = urn:iso:std:iso:3166#NO instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO &quot;null&quot;')</b></td>
+     <td><b>StructureDefinition.jurisdiction</b></td><td><b>error</b></td><td><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.no.municipal, jurisdiction = urn:iso:std:iso:3166#NO instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO &quot;null&quot;')</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">RESOURCE_JURISDICTION_MISMATCH</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/github&#8203;.com&#8203;/oslokommune&#8203;/Pasientjournal-API&#8203;/StructureDefinition&#8203;/no-ehr-core-careplan')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/github&#8203;.com&#8203;/oslokommune&#8203;/Pasientjournal-API&#8203;/StructureDefinition&#8203;/municipal-careplan')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
 </table>
 <hr/>
-<a name="___w_Pasientjournal-API_Pasientjournal-API_no-ehr-core_fsh-generated_resources_StructureDefinition-no-ehr-core-composition"> </a>
-<h2><a href="StructureDefinition-no-ehr-core-composition.html">fsh-generated/resources/StructureDefinition-no-ehr-core-composition.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
+<a name="___w_Pasientjournal-API_Pasientjournal-API_no-ehr-core_fsh-generated_resources_StructureDefinition-municipal-composition"> </a>
+<h2><a href="StructureDefinition-municipal-composition.html">fsh-generated/resources/StructureDefinition-municipal-composition.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
@@ -315,15 +352,15 @@ hl7.fhir.uv.tools.r4#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/Structu
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition.jurisdiction</b></td><td><b>error</b></td><td title="RESOURCE_JURISDICTION_MISMATCH"><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.no.domain.ehr.core, jurisdiction = urn:iso:std:iso:3166#NO instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO &quot;null&quot;')</b></td>
+     <td><b>StructureDefinition.jurisdiction</b></td><td><b>error</b></td><td><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.no.municipal, jurisdiction = urn:iso:std:iso:3166#NO instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO &quot;null&quot;')</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">RESOURCE_JURISDICTION_MISMATCH</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/github&#8203;.com&#8203;/oslokommune&#8203;/Pasientjournal-API&#8203;/StructureDefinition&#8203;/no-ehr-core-composition')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/github&#8203;.com&#8203;/oslokommune&#8203;/Pasientjournal-API&#8203;/StructureDefinition&#8203;/municipal-composition')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
 </table>
 <hr/>
-<a name="___w_Pasientjournal-API_Pasientjournal-API_no-ehr-core_fsh-generated_resources_StructureDefinition-no-ehr-core-documentreference"> </a>
-<h2><a href="StructureDefinition-no-ehr-core-documentreference.html">fsh-generated/resources/StructureDefinition-no-ehr-core-documentreference.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
+<a name="___w_Pasientjournal-API_Pasientjournal-API_no-ehr-core_fsh-generated_resources_StructureDefinition-municipal-documentreference"> </a>
+<h2><a href="StructureDefinition-municipal-documentreference.html">fsh-generated/resources/StructureDefinition-municipal-documentreference.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
@@ -331,15 +368,15 @@ hl7.fhir.uv.tools.r4#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/Structu
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition.jurisdiction</b></td><td><b>error</b></td><td title="RESOURCE_JURISDICTION_MISMATCH"><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.no.domain.ehr.core, jurisdiction = urn:iso:std:iso:3166#NO instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO &quot;null&quot;')</b></td>
+     <td><b>StructureDefinition.jurisdiction</b></td><td><b>error</b></td><td><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.no.municipal, jurisdiction = urn:iso:std:iso:3166#NO instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO &quot;null&quot;')</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">RESOURCE_JURISDICTION_MISMATCH</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/github&#8203;.com&#8203;/oslokommune&#8203;/Pasientjournal-API&#8203;/StructureDefinition&#8203;/no-ehr-core-documentreference')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/github&#8203;.com&#8203;/oslokommune&#8203;/Pasientjournal-API&#8203;/StructureDefinition&#8203;/municipal-documentreference')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
 </table>
 <hr/>
-<a name="___w_Pasientjournal-API_Pasientjournal-API_no-ehr-core_fsh-generated_resources_StructureDefinition-no-ehr-core-encounter"> </a>
-<h2><a href="StructureDefinition-no-ehr-core-encounter.html">fsh-generated/resources/StructureDefinition-no-ehr-core-encounter.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(1)</span></h2>
+<a name="___w_Pasientjournal-API_Pasientjournal-API_no-ehr-core_fsh-generated_resources_StructureDefinition-municipal-encounter"> </a>
+<h2><a href="StructureDefinition-municipal-encounter.html">fsh-generated/resources/StructureDefinition-municipal-encounter.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
@@ -347,15 +384,15 @@ hl7.fhir.uv.tools.r4#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/Structu
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition.jurisdiction</b></td><td><b>error</b></td><td title="RESOURCE_JURISDICTION_MISMATCH"><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.no.domain.ehr.core, jurisdiction = urn:iso:std:iso:3166#NO instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO &quot;null&quot;')</b></td>
+     <td><b>StructureDefinition.jurisdiction</b></td><td><b>error</b></td><td><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.no.municipal, jurisdiction = urn:iso:std:iso:3166#NO instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO &quot;null&quot;')</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">RESOURCE_JURISDICTION_MISMATCH</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/github&#8203;.com&#8203;/oslokommune&#8203;/Pasientjournal-API&#8203;/StructureDefinition&#8203;/no-ehr-core-encounter')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/github&#8203;.com&#8203;/oslokommune&#8203;/Pasientjournal-API&#8203;/StructureDefinition&#8203;/municipal-encounter')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
 </table>
 <hr/>
-<a name="___w_Pasientjournal-API_Pasientjournal-API_no-ehr-core_fsh-generated_resources_StructureDefinition-no-ehr-core-location"> </a>
-<h2><a href="StructureDefinition-no-ehr-core-location.html">fsh-generated/resources/StructureDefinition-no-ehr-core-location.json</a> <span id="svi7" class="toggle" onclick="toggle('vi7')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi7')">(1)</span></h2>
+<a name="___w_Pasientjournal-API_Pasientjournal-API_no-ehr-core_fsh-generated_resources_StructureDefinition-municipal-location"> </a>
+<h2><a href="StructureDefinition-municipal-location.html">fsh-generated/resources/StructureDefinition-municipal-location.json</a> <span id="svi7" class="toggle" onclick="toggle('vi7')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi7')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi7"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
@@ -363,15 +400,15 @@ hl7.fhir.uv.tools.r4#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/Structu
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition.jurisdiction</b></td><td><b>error</b></td><td title="RESOURCE_JURISDICTION_MISMATCH"><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.no.domain.ehr.core, jurisdiction = urn:iso:std:iso:3166#NO instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO &quot;null&quot;')</b></td>
+     <td><b>StructureDefinition.jurisdiction</b></td><td><b>error</b></td><td><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.no.municipal, jurisdiction = urn:iso:std:iso:3166#NO instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO &quot;null&quot;')</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">RESOURCE_JURISDICTION_MISMATCH</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/github&#8203;.com&#8203;/oslokommune&#8203;/Pasientjournal-API&#8203;/StructureDefinition&#8203;/no-ehr-core-location')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/github&#8203;.com&#8203;/oslokommune&#8203;/Pasientjournal-API&#8203;/StructureDefinition&#8203;/municipal-location')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
 </table>
 <hr/>
-<a name="___w_Pasientjournal-API_Pasientjournal-API_no-ehr-core_fsh-generated_resources_StructureDefinition-no-ehr-core-observation"> </a>
-<h2><a href="StructureDefinition-no-ehr-core-observation.html">fsh-generated/resources/StructureDefinition-no-ehr-core-observation.json</a> <span id="svi8" class="toggle" onclick="toggle('vi8')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi8')">(1)</span></h2>
+<a name="___w_Pasientjournal-API_Pasientjournal-API_no-ehr-core_fsh-generated_resources_StructureDefinition-municipal-observation"> </a>
+<h2><a href="StructureDefinition-municipal-observation.html">fsh-generated/resources/StructureDefinition-municipal-observation.json</a> <span id="svi8" class="toggle" onclick="toggle('vi8')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi8')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi8"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
@@ -379,58 +416,95 @@ hl7.fhir.uv.tools.r4#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/Structu
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition.jurisdiction</b></td><td><b>error</b></td><td title="RESOURCE_JURISDICTION_MISMATCH"><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.no.domain.ehr.core, jurisdiction = urn:iso:std:iso:3166#NO instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO &quot;null&quot;')</b></td>
+     <td><b>StructureDefinition.jurisdiction</b></td><td><b>error</b></td><td><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.no.municipal, jurisdiction = urn:iso:std:iso:3166#NO instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO &quot;null&quot;')</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">RESOURCE_JURISDICTION_MISMATCH</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/github&#8203;.com&#8203;/oslokommune&#8203;/Pasientjournal-API&#8203;/StructureDefinition&#8203;/no-ehr-core-observation')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/github&#8203;.com&#8203;/oslokommune&#8203;/Pasientjournal-API&#8203;/StructureDefinition&#8203;/municipal-observation')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
 </table>
 <hr/>
-<a name="___w_Pasientjournal-API_Pasientjournal-API_no-ehr-core_fsh-generated_resources_StructureDefinition-no-ehr-core-organization"> </a>
-<h2><a href="StructureDefinition-no-ehr-core-organization.html">fsh-generated/resources/StructureDefinition-no-ehr-core-organization.json</a> <span id="svi9" class="toggle" onclick="toggle('vi9')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi9')">(1)</span></h2>
+<a name="___w_Pasientjournal-API_Pasientjournal-API_no-ehr-core_fsh-generated_resources_StructureDefinition-municipal-organization"> </a>
+<h2><a href="StructureDefinition-municipal-organization.html">fsh-generated/resources/StructureDefinition-municipal-organization.json</a> <span id="svi9" class="toggle" onclick="toggle('vi9')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi9')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi9"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition.jurisdiction</b></td><td><b>error</b></td><td title="RESOURCE_JURISDICTION_MISMATCH"><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.no.domain.ehr.core, jurisdiction = urn:iso:std:iso:3166#NO instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO &quot;null&quot;')</b></td>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition.snapshot.element[9]</b></td><td><b>information</b></td><td><b>The slice definition for Organization.identifier has a maximum of 1 but the slices add up to a maximum of 2. Check that this is what is intended</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/github&#8203;.com&#8203;/oslokommune&#8203;/Pasientjournal-API&#8203;/StructureDefinition&#8203;/no-ehr-core-organization')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[38]&#8203;.binding&#8203;.valueSet (l1&#8203;/c70678)</b></td><td><b>warning</b></td><td><b>A definition could not be found for Canonical URL 'urn:oid:2.16.578.1.12.4.1.1.8628'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[50]&#8203;.binding&#8203;.valueSet (l1&#8203;/c86251)</b></td><td><b>warning</b></td><td><b>A definition could not be found for Canonical URL 'urn:oid:2.16.578.1.12.4.1.1.8624'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.jurisdiction</b></td><td><b>error</b></td><td><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.no.municipal, jurisdiction = urn:iso:std:iso:3166#NO instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO &quot;null&quot;')</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">RESOURCE_JURISDICTION_MISMATCH</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/github&#8203;.com&#8203;/oslokommune&#8203;/Pasientjournal-API&#8203;/StructureDefinition&#8203;/municipal-organization')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
 </table>
 <hr/>
-<a name="___w_Pasientjournal-API_Pasientjournal-API_no-ehr-core_fsh-generated_resources_StructureDefinition-no-ehr-core-patient"> </a>
-<h2><a href="StructureDefinition-no-ehr-core-patient.html">fsh-generated/resources/StructureDefinition-no-ehr-core-patient.json</a> <span id="svi10" class="toggle" onclick="toggle('vi10')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi10')">(1)</span></h2>
+<a name="___w_Pasientjournal-API_Pasientjournal-API_no-ehr-core_fsh-generated_resources_StructureDefinition-municipal-patient"> </a>
+<h2><a href="StructureDefinition-municipal-patient.html">fsh-generated/resources/StructureDefinition-municipal-patient.json</a> <span id="svi10" class="toggle" onclick="toggle('vi10')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi10')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi10"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[8]&#8203;.type[0]&#8203;.profile[0] (l1&#8203;/c21093)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/patient-citizenship'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/patient-citizenship' to 'http://hl7.org/fhir/StructureDefinition/patient-citizenship|5.2.0'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
+   </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition.jurisdiction</b></td><td><b>error</b></td><td title="RESOURCE_JURISDICTION_MISMATCH"><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.no.domain.ehr.core, jurisdiction = urn:iso:std:iso:3166#NO instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO &quot;null&quot;')</b></td>
+     <td><b>StructureDefinition.jurisdiction</b></td><td><b>error</b></td><td><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.no.municipal, jurisdiction = urn:iso:std:iso:3166#NO instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO &quot;null&quot;')</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">RESOURCE_JURISDICTION_MISMATCH</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/github&#8203;.com&#8203;/oslokommune&#8203;/Pasientjournal-API&#8203;/StructureDefinition&#8203;/no-ehr-core-patient')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/github&#8203;.com&#8203;/oslokommune&#8203;/Pasientjournal-API&#8203;/StructureDefinition&#8203;/municipal-patient')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
 </table>
 <hr/>
-<a name="___w_Pasientjournal-API_Pasientjournal-API_no-ehr-core_fsh-generated_resources_StructureDefinition-no-ehr-core-practitioner"> </a>
-<h2><a href="StructureDefinition-no-ehr-core-practitioner.html">fsh-generated/resources/StructureDefinition-no-ehr-core-practitioner.json</a> <span id="svi11" class="toggle" onclick="toggle('vi11')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi11')">(1)</span></h2>
+<a name="___w_Pasientjournal-API_Pasientjournal-API_no-ehr-core_fsh-generated_resources_StructureDefinition-municipal-practitioner"> </a>
+<h2><a href="StructureDefinition-municipal-practitioner.html">fsh-generated/resources/StructureDefinition-municipal-practitioner.json</a> <span id="svi11" class="toggle" onclick="toggle('vi11')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi11')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi11"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition.jurisdiction</b></td><td><b>error</b></td><td title="RESOURCE_JURISDICTION_MISMATCH"><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.no.domain.ehr.core, jurisdiction = urn:iso:std:iso:3166#NO instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO &quot;null&quot;')</b></td>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[53]&#8203;.binding&#8203;.valueSet (l1&#8203;/c77150)</b></td><td><b>warning</b></td><td><b>A definition could not be found for Canonical URL 'urn:oid:2.16.578.1.12.4.1.1.9060'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/github&#8203;.com&#8203;/oslokommune&#8203;/Pasientjournal-API&#8203;/StructureDefinition&#8203;/no-ehr-core-practitioner')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[61]&#8203;.binding&#8203;.valueSet (l1&#8203;/c87631)</b></td><td><b>warning</b></td><td><b>A definition could not be found for Canonical URL 'urn:oid:2.16.578.1.12.4.1.1.7704'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[69]&#8203;.binding&#8203;.valueSet (l1&#8203;/c98091)</b></td><td><b>warning</b></td><td><b>A definition could not be found for Canonical URL 'urn:oid:2.16.578.1.12.4.1.1.7426'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.jurisdiction</b></td><td><b>error</b></td><td><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.no.municipal, jurisdiction = urn:iso:std:iso:3166#NO instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO &quot;null&quot;')</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">RESOURCE_JURISDICTION_MISMATCH</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/github&#8203;.com&#8203;/oslokommune&#8203;/Pasientjournal-API&#8203;/StructureDefinition&#8203;/municipal-practitioner')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="___w_Pasientjournal-API_Pasientjournal-API_no-ehr-core_fsh-generated_resources_StructureDefinition-municipal-service"> </a>
+<h2><a href="StructureDefinition-municipal-service.html">fsh-generated/resources/StructureDefinition-municipal-service.json</a> <span id="svi12" class="toggle" onclick="toggle('vi12')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi12')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi12"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.jurisdiction</b></td><td><b>error</b></td><td><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.no.municipal, jurisdiction = urn:iso:std:iso:3166#NO instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO &quot;null&quot;')</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">RESOURCE_JURISDICTION_MISMATCH</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/github&#8203;.com&#8203;/oslokommune&#8203;/Pasientjournal-API&#8203;/StructureDefinition&#8203;/municipal-service')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
 </table>
 <a name="suppressed"> </a>
@@ -438,41 +512,100 @@ hl7.fhir.uv.tools.r4#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/Structu
 <p>No suppressed messsages</p><a name="sorted"> </a>
 <p><b>Errors sorted by type</b></p>
 <hr/>
+<a name="IG_DEPENDENCY_INVALID_URL"> </a>
+<h2>IG_DEPENDENCY_INVALID_URL</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="index.html">fsh-generated/resources/ImplementationGuide-hl7.fhir.no.municipal.json</a></td><td><b>The canonical URL http://fhir.org/packages/hl7.fhir.no.basis/ImplementationGuide/hl7.fhir.no.basis doesn't point to an actual ImplementationGuide resource</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="MSG_DEPENDS_ON_DEPRECATED"> </a>
+<h2>MSG_DEPENDS_ON_DEPRECATED</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-municipal-appointment.html">fsh-generated/resources/StructureDefinition-municipal-appointment.json</a></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated</b></td>
+   </tr>
+</table>
+<hr/>
 <a name="RESOURCE_JURISDICTION_MISMATCH"> </a>
 <h2>RESOURCE_JURISDICTION_MISMATCH</h2>
  <table class="grid">
    <tr style="background-color: #fff4ee">
-     <td><a href="index.html">fsh-generated/resources/ImplementationGuide-hl7.fhir.no.domain.ehr.core.json</a></td><td><b>The resource should declare its jurisdiction to match the package id (hl7.fhir.no.domain.ehr.core, jurisdiction = urn:iso:std:iso:3166#NO instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO &quot;null&quot;')</b></td>
+     <td><a href="index.html">fsh-generated/resources/ImplementationGuide-hl7.fhir.no.municipal.json</a></td><td><b>The resource should declare its jurisdiction to match the package id (hl7.fhir.no.municipal, jurisdiction = urn:iso:std:iso:3166#NO instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO &quot;null&quot;')</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="StructureDefinition-no-ehr-core-appointment.html">fsh-generated/resources/StructureDefinition-no-ehr-core-appointment.json</a></td><td><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.no.domain.ehr.core, jurisdiction = urn:iso:std:iso:3166#NO instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO &quot;null&quot;')</b></td>
+     <td><a href="StructureDefinition-municipal-appointment.html">fsh-generated/resources/StructureDefinition-municipal-appointment.json</a></td><td><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.no.municipal, jurisdiction = urn:iso:std:iso:3166#NO instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO &quot;null&quot;')</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="StructureDefinition-no-ehr-core-careplan.html">fsh-generated/resources/StructureDefinition-no-ehr-core-careplan.json</a></td><td><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.no.domain.ehr.core, jurisdiction = urn:iso:std:iso:3166#NO instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO &quot;null&quot;')</b></td>
+     <td><a href="StructureDefinition-municipal-careplan.html">fsh-generated/resources/StructureDefinition-municipal-careplan.json</a></td><td><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.no.municipal, jurisdiction = urn:iso:std:iso:3166#NO instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO &quot;null&quot;')</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="StructureDefinition-no-ehr-core-composition.html">fsh-generated/resources/StructureDefinition-no-ehr-core-composition.json</a></td><td><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.no.domain.ehr.core, jurisdiction = urn:iso:std:iso:3166#NO instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO &quot;null&quot;')</b></td>
+     <td><a href="StructureDefinition-municipal-composition.html">fsh-generated/resources/StructureDefinition-municipal-composition.json</a></td><td><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.no.municipal, jurisdiction = urn:iso:std:iso:3166#NO instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO &quot;null&quot;')</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="StructureDefinition-no-ehr-core-documentreference.html">fsh-generated/resources/StructureDefinition-no-ehr-core-documentreference.json</a></td><td><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.no.domain.ehr.core, jurisdiction = urn:iso:std:iso:3166#NO instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO &quot;null&quot;')</b></td>
+     <td><a href="StructureDefinition-municipal-documentreference.html">fsh-generated/resources/StructureDefinition-municipal-documentreference.json</a></td><td><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.no.municipal, jurisdiction = urn:iso:std:iso:3166#NO instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO &quot;null&quot;')</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="StructureDefinition-no-ehr-core-encounter.html">fsh-generated/resources/StructureDefinition-no-ehr-core-encounter.json</a></td><td><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.no.domain.ehr.core, jurisdiction = urn:iso:std:iso:3166#NO instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO &quot;null&quot;')</b></td>
+     <td><a href="StructureDefinition-municipal-encounter.html">fsh-generated/resources/StructureDefinition-municipal-encounter.json</a></td><td><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.no.municipal, jurisdiction = urn:iso:std:iso:3166#NO instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO &quot;null&quot;')</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="StructureDefinition-no-ehr-core-location.html">fsh-generated/resources/StructureDefinition-no-ehr-core-location.json</a></td><td><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.no.domain.ehr.core, jurisdiction = urn:iso:std:iso:3166#NO instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO &quot;null&quot;')</b></td>
+     <td><a href="StructureDefinition-municipal-location.html">fsh-generated/resources/StructureDefinition-municipal-location.json</a></td><td><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.no.municipal, jurisdiction = urn:iso:std:iso:3166#NO instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO &quot;null&quot;')</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="StructureDefinition-no-ehr-core-observation.html">fsh-generated/resources/StructureDefinition-no-ehr-core-observation.json</a></td><td><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.no.domain.ehr.core, jurisdiction = urn:iso:std:iso:3166#NO instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO &quot;null&quot;')</b></td>
+     <td><a href="StructureDefinition-municipal-observation.html">fsh-generated/resources/StructureDefinition-municipal-observation.json</a></td><td><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.no.municipal, jurisdiction = urn:iso:std:iso:3166#NO instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO &quot;null&quot;')</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="StructureDefinition-no-ehr-core-organization.html">fsh-generated/resources/StructureDefinition-no-ehr-core-organization.json</a></td><td><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.no.domain.ehr.core, jurisdiction = urn:iso:std:iso:3166#NO instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO &quot;null&quot;')</b></td>
+     <td><a href="StructureDefinition-municipal-organization.html">fsh-generated/resources/StructureDefinition-municipal-organization.json</a></td><td><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.no.municipal, jurisdiction = urn:iso:std:iso:3166#NO instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO &quot;null&quot;')</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="StructureDefinition-no-ehr-core-patient.html">fsh-generated/resources/StructureDefinition-no-ehr-core-patient.json</a></td><td><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.no.domain.ehr.core, jurisdiction = urn:iso:std:iso:3166#NO instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO &quot;null&quot;')</b></td>
+     <td><a href="StructureDefinition-municipal-patient.html">fsh-generated/resources/StructureDefinition-municipal-patient.json</a></td><td><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.no.municipal, jurisdiction = urn:iso:std:iso:3166#NO instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO &quot;null&quot;')</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="StructureDefinition-no-ehr-core-practitioner.html">fsh-generated/resources/StructureDefinition-no-ehr-core-practitioner.json</a></td><td><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.no.domain.ehr.core, jurisdiction = urn:iso:std:iso:3166#NO instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO &quot;null&quot;')</b></td>
+     <td><a href="StructureDefinition-municipal-practitioner.html">fsh-generated/resources/StructureDefinition-municipal-practitioner.json</a></td><td><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.no.municipal, jurisdiction = urn:iso:std:iso:3166#NO instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO &quot;null&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-municipal-service.html">fsh-generated/resources/StructureDefinition-municipal-service.json</a></td><td><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.no.municipal, jurisdiction = urn:iso:std:iso:3166#NO instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#NO &quot;null&quot;')</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS"> </a>
+<h2>TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-municipal-patient.html">fsh-generated/resources/StructureDefinition-municipal-patient.json</a></td><td><b>There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/patient-citizenship'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/patient-citizenship' to 'http://hl7.org/fhir/StructureDefinition/patient-citizenship|5.2.0'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"> </a>
+<h2>TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="index.html">fsh-generated/resources/ImplementationGuide-hl7.fhir.no.municipal.json</a></td><td><b>A definition could not be found for Canonical URL 'http://fhir.org/packages/hl7.fhir.no.basis/ImplementationGuide/hl7.fhir.no.basis'</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-municipal-appointment.html">fsh-generated/resources/StructureDefinition-municipal-appointment.json</a></td><td><b>A definition could not be found for Canonical URL 'urn:oid:2.16.578.1.12.4.1.1.8406'</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-municipal-appointment.html">fsh-generated/resources/StructureDefinition-municipal-appointment.json</a></td><td><b>A definition could not be found for Canonical URL 'urn:oid:2.16.578.1.12.4.1.1.8432'</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-municipal-appointment.html">fsh-generated/resources/StructureDefinition-municipal-appointment.json</a></td><td><b>A definition could not be found for Canonical URL 'urn:oid:2.16.578.1.12.4.1.1.7617'</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-municipal-organization.html">fsh-generated/resources/StructureDefinition-municipal-organization.json</a></td><td><b>A definition could not be found for Canonical URL 'urn:oid:2.16.578.1.12.4.1.1.8628'</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-municipal-organization.html">fsh-generated/resources/StructureDefinition-municipal-organization.json</a></td><td><b>A definition could not be found for Canonical URL 'urn:oid:2.16.578.1.12.4.1.1.8624'</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-municipal-practitioner.html">fsh-generated/resources/StructureDefinition-municipal-practitioner.json</a></td><td><b>A definition could not be found for Canonical URL 'urn:oid:2.16.578.1.12.4.1.1.9060'</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-municipal-practitioner.html">fsh-generated/resources/StructureDefinition-municipal-practitioner.json</a></td><td><b>A definition could not be found for Canonical URL 'urn:oid:2.16.578.1.12.4.1.1.7704'</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-municipal-practitioner.html">fsh-generated/resources/StructureDefinition-municipal-practitioner.json</a></td><td><b>A definition could not be found for Canonical URL 'urn:oid:2.16.578.1.12.4.1.1.7426'</b></td>
    </tr>
 </table>
 </body>

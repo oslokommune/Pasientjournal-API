@@ -1,6 +1,6 @@
 {
-  "version" : "0.1.0",
-  "date" : "20241207204418",
+  "version" : "0.2.0",
+  "date" : "20250603110503",
   "notForPublication" : true,
-  "name" : "hl7.fhir.no.domain.ehr.core.r4"
+  "name" : "hl7.fhir.no.municipal.r4"
 }

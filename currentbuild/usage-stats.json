@@ -1,67 +1,73 @@
 {
-  "package": "hl7.fhir.no.domain.ehr.core",
-  "version": "0.1.0",
+  "package": "hl7.fhir.no.municipal",
+  "version": "0.2.0",
   "fhirVersion": "4.0.1",
   "extensions": [],
   "profiles": {
     "Appointment": [
       {
-        "url": "https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/no-ehr-core-appointment",
-        "title": "no-ehr-core-appointment"
+        "url": "https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/municipal-appointment",
+        "title": "municipal-appointment"
       }
     ],
     "CarePlan": [
       {
-        "url": "https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/no-ehr-core-careplan",
-        "title": "no-ehr-core-care-plan"
+        "url": "https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/municipal-careplan",
+        "title": "municipal-care-plan"
       }
     ],
     "Composition": [
       {
-        "url": "https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/no-ehr-core-composition",
-        "title": "no-ehr-core-composition"
+        "url": "https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/municipal-composition",
+        "title": "municipal-composition"
       }
     ],
     "DocumentReference": [
       {
-        "url": "https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/no-ehr-core-documentreference",
-        "title": "no-ehr-core-document-reference"
+        "url": "https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/municipal-documentreference",
+        "title": "municipal-document-reference"
       }
     ],
     "Encounter": [
       {
-        "url": "https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/no-ehr-core-encounter",
-        "title": "no-ehr-core-encounter"
+        "url": "https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/municipal-encounter",
+        "title": "municipal-encounter"
       }
     ],
     "Location": [
       {
-        "url": "https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/no-ehr-core-location",
-        "title": "no-ehr-core-location"
+        "url": "https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/municipal-location",
+        "title": "municipal-location"
       }
     ],
     "Observation": [
       {
-        "url": "https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/no-ehr-core-observation",
-        "title": "no-ehr-core-observation"
+        "url": "https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/municipal-observation",
+        "title": "municipal-observation"
       }
     ],
     "Organization": [
       {
-        "url": "https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/no-ehr-core-organization",
-        "title": "no-ehr-core-organization"
+        "url": "https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/municipal-organization",
+        "title": "municipal-organization"
       }
     ],
     "Patient": [
       {
-        "url": "https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/no-ehr-core-patient",
-        "title": "no-ehr-core-patient"
+        "url": "https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/municipal-patient",
+        "title": "municipal-patient"
       }
     ],
     "Practitioner": [
       {
-        "url": "https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/no-ehr-core-practitioner",
-        "title": "no-ehr-core-practitioner"
+        "url": "https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/municipal-practitioner",
+        "title": "municipal-practitioner"
+      }
+    ],
+    "EpisodeOfCare": [
+      {
+        "url": "https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/municipal-service",
+        "title": "municipal-service"
       }
     ]
   },
@@ -118,6 +124,9 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
+      "StructureDefinition.snapshot"
     ]
   }
 }
