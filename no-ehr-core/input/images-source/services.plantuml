@@ -1,0 +1,16 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+actor "Case worker" as caseworker
+actor "Citizen" as citizen
+actor "Health administrator" as administrator
+participant "EHR" as aehr
+participant "HelseID" as helseID
+
+caseworker <- citizen: Request municipal service
+caseworker -> aehr: Process request and assign municipal service
+aehr -> helseID: Authenticate system / fetch access token
+administrator -> aehr: Search for municipal service of type X
+aehr --> administrator: 200 OK {services: [{Municipal-service}]}
+@enduml

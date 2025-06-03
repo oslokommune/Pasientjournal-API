@@ -1,0 +1,23 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+scale 1024 width
+autonumber
+actor "Case worker" as caseworker
+actor "Citizen" as citizen
+participant "EHR A" as aehr
+participant "HelseID" as helseID
+participant "NHN Municipal Services" as okt
+participant "EHR B" as behr
+actor "Health personel" as healthpersonel
+
+caseworker <- citizen: Request municipal service
+caseworker -> aehr: Process request and assign municipal service
+aehr -> helseID: Authenticate system / fetch access token
+aehr -> okt: POST /services {patient: {Patient}, services: [{Municipal-service}], ..}
+okt --> aehr: 201 Created
+healthpersonel -> citizen: Treatment with information needed about municipal services
+healthpersonel -> behr: Lookup municipal service for citizen
+behr -> helseID: Authenticate system / fetch access token
+behr -> okt: GET /services/{patient-id}
+okt --> behr: 200 OK {patient: {Patient}, services: [{Municipal-service}]}
+@enduml

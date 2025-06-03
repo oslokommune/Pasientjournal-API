@@ -39,7 +39,9 @@ pages:
   index.md:
     title: Home
   conformance.md:
-    title: Conformance  
+    title: Conformance
+  useCaseMunicipalServices.md:
+    title: Use Case Municipal Services
   api.md:
     title: API Documentation
     practitionerContextOps.md:
@@ -100,6 +102,7 @@ menu:
   Home: index.html
   Conformance: conformance.html
   FHIR Profiles: artifacts.html
+  Use Cases: useCaseMunicipalServices.html
   API: 
     General: api.html
     Practitioner Context: practitionerContextOps.html
