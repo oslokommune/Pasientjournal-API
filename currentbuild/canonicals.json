@@ -60,7 +60,7 @@
     "type" : "StructureDefinition",
     "url" : "https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/municipal-organization",
     "version" : "0.2.0",
-    "name" : "MunicipalOrganization"
+    "name" : "NoMunicipalOrganization"
   },
   {
     "id" : "municipal-patient",
@@ -81,6 +81,6 @@
     "type" : "StructureDefinition",
     "url" : "https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/municipal-service",
     "version" : "0.2.0",
-    "name" : "MunicipalService"
+    "name" : "NoMunicipalService"
   }
 ]

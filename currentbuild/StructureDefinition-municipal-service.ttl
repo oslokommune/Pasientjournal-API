@@ -15,10 +15,10 @@
   ] ; # 
   fhir:url [ fhir:v "https://github.com/oslokommune/Pasientjournal-API/StructureDefinition/municipal-service"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.2.0"] ; # 
-  fhir:name [ fhir:v "MunicipalService"] ; # 
+  fhir:name [ fhir:v "NoMunicipalService"] ; # 
   fhir:title [ fhir:v "municipal-service"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-06-03T11:05:03+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-06-11T10:23:46+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Oslo Origo - Oslo kommune"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Oslo Origo - Oslo kommune" ] ;

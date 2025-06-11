@@ -182,24 +182,149 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p>  <!-- white space is critical inside of capture --></p>
-<div>
-  <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown. -->
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#use-case-municipal-services" id="markdown-toc-use-case-municipal-services">Use case: Municipal Services</a>    <ul>
+      <li><a href="#list-of-service-codes" id="markdown-toc-list-of-service-codes">List of service codes:</a></li>
+      <li><a href="#looking-up-the-services-assigned-to-a-citizen" id="markdown-toc-looking-up-the-services-assigned-to-a-citizen">Looking up the services assigned to a citizen</a></li>
+      <li><a href="#looking-up-all-services-of-type" id="markdown-toc-looking-up-all-services-of-type">Looking up all services of type</a></li>
+    </ul>
+  </li>
+</ul>
+
 </div>
-<p>Use case Municipal Services</p>
+<h2 id="use-case-municipal-services">Use case: Municipal Services</h2>
 
 <p>Municipal services are a part of the municipal healthcare system and various services are assigned to citizens according to their needs. The services are provided by the municipality.</p>
 
-<p><a name="l333">​</a>The municipalities report on the services they provide to the citizens. The reporting is done by the municipality and is typically based on the data contained in a local EHR system. 
+<p><a name="l354">​</a>The municipalities report on the services they provide to the citizens. The reporting is done by the municipality and is typically based on the data contained in a local EHR system. 
 Services are classified by a service code as described by the Norwegian Directorate of Health and is documented in the National <a href="&quot;https://finnkode.helsedirektoratet.no/adm/collections/9151&quot;">code repository</a></p>
 
-<p>A national service for storing municipal services assigned to citizens</p>
+<h3 id="list-of-service-codes">List of service codes:</h3>
 
-<p>Typical use cases include:</p>
+<table>
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>Service Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Praktisk bistand - daglige gjøremål</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Praktisk bistand - opplæring - daglige gjøremål</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Praktisk bistand - brukerstyrt - personlig assistanse</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Dagaktivitetstilbud</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Matombringing</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Trygghetsalarm</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Avlastning utenfor institusjon</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Avlastning i institusjon</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Støttekontakt</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Omsorgsstønad</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>Bruk av tvang psykisk utviklingshemning – planlagte tiltak</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>Helsetjenester i hjemmet</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>Dagopphold i institusjon</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>Tidsbegrenset opphold - utredning/behandling</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>Tidsbegrenset opphold - habilitering/rehabilitering</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>Tidsbegrenset opphold - annet</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>Langtidsopphold i institusjon</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>Nattopphold i institusjon</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>Bruk av tvang psykisk utviklingshemning – nødsituasjoner</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>Helsehjelp med tvang</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>Kommunal øyeblikkelig hjelp - døgnopphold</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>Lokaliseringsteknologi (GPS)</td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>Elektronisk medisineringsstøtte</td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td>Digitalt tilsyn</td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td>Bolig som kommunen disponerer for helse- og omsorgsformål</td>
+    </tr>
+  </tbody>
+</table>
 
-<p>Looking up the services assigned to a citizen when in a clinical context, e.g. when a citizen is admitted to a hospital.</p>
+<p>Information about the services assigned to a citizen can be useful in a number of clinical settings. For example, it can be 
+important to know what services a citizen has access to when they are discharged from a hospital in order to ensure an appropriate transition 
+to home care or other services.</p>
+
+<p>NHN has created a national service for storing municipal services assigned to citizens. Local EHR systems report the services assigned to citizens to this service.</p>
+
+<h3 id="looking-up-the-services-assigned-to-a-citizen">Looking up the services assigned to a citizen</h3>
+<p>Sequence describes lookup from clinical context, e.g. when a citizen is admitted to or discharged from a hospital.</p>
 <svg xmlns="http://www.w3.org/2000/svg" contentStyleType="text/css" viewBox="0 0 1024 292" zoomAndPan="magnify" data-diagram-type="SEQUENCE" preserveAspectRatio="none" width="1024.4406px" xmlns:xlink="http://www.w3.org/1999/xlink" style="width:1024px;height:292px;background:#FFFFFF;" version="1.1" height="292.9628px"><defs></defs><g><g><title>Case worker</title><rect width="4.955" x="29.4078" y="50.353" fill="#000000" fill-opacity="0.00000" height="192.8278"></rect><line y1="50.353" x1="31.588" y2="243.1808" style="stroke:#181818;stroke-width:0.3097;stroke-dasharray:5.0,5.0;" x2="31.588"></line></g><g><title>Citizen</title><rect width="4.955" x="158.6148" y="50.353" fill="#000000" fill-opacity="0.00000" height="192.8278"></rect><line y1="50.353" x1="160.5104" y2="243.1808" style="stroke:#181818;stroke-width:0.3097;stroke-dasharray:5.0,5.0;" x2="160.5104"></line></g><g><title>EHR A</title><rect width="4.955" x="235.7952" y="50.353" fill="#000000" fill-opacity="0.00000" height="192.8278"></rect><line y1="50.353" x1="237.9234" y2="243.1808" style="stroke:#181818;stroke-width:0.3097;stroke-dasharray:5.0,5.0;" x2="237.9234"></line></g><g><title>HelseID</title><rect width="4.955" x="425.5639" y="50.353" fill="#000000" fill-opacity="0.00000" height="192.8278"></rect><line y1="50.353" x1="427.4695" y2="243.1808" style="stroke:#181818;stroke-width:0.3097;stroke-dasharray:5.0,5.0;" x2="427.4695"></line></g><g><title>NHN Municipal Services</title><rect width="4.955" x="543.9235" y="50.353" fill="#000000" fill-opacity="0.00000" height="192.8278"></rect><line y1="50.353" x1="546.3807" y2="243.1808" style="stroke:#181818;stroke-width:0.3097;stroke-dasharray:5.0,5.0;" x2="546.3807"></line></g><g><title>EHR B</title><rect width="4.955" x="817.4305" y="50.353" fill="#000000" fill-opacity="0.00000" height="192.8278"></rect><line y1="50.353" x1="819.5502" y2="243.1808" style="stroke:#181818;stroke-width:0.3097;stroke-dasharray:5.0,5.0;" x2="819.5502"></line></g><g><title>Health personel</title><rect width="4.955" x="985.3162" y="50.353" fill="#000000" fill-opacity="0.00000" height="192.8278"></rect><line y1="50.353" x1="987.5109" y2="243.1808" style="stroke:#181818;stroke-width:0.3097;stroke-dasharray:5.0,5.0;" x2="987.5109"></line></g><g data-participant="caseworker" class="participant participant-head"><text lengthAdjust="spacing" x="3.0969" font-size="8.6712" textLength="53.8605" y="48.308" font-family="sans-serif" fill="#000000">Case worker</text><ellipse cx="31.8852" cy="8.3615" rx="4.955" ry="4.955" style="stroke:#181818;stroke-width:0.3097;" fill="#E2E2F0"></ellipse><path d="M31.8852,13.3165 L31.8852,30.0395 M23.8334,18.2715 L39.9371,18.2715 M31.8852,30.0395 L23.8334,39.3301 M31.8852,30.0395 L39.9371,39.3301" style="stroke:#181818;stroke-width:0.3097;" fill="none"></path></g><g data-participant="caseworker" class="participant participant-tail"><text lengthAdjust="spacing" x="3.0969" font-size="8.6712" textLength="53.8605" y="250.6102" font-family="sans-serif" fill="#000000">Case worker</text><ellipse cx="31.8852" cy="257.9199" rx="4.955" ry="4.955" style="stroke:#181818;stroke-width:0.3097;" fill="#E2E2F0"></ellipse><path d="M31.8852,262.8749 L31.8852,279.5979 M23.8334,267.8298 L39.9371,267.8298 M31.8852,279.5979 L23.8334,288.8885 M31.8852,279.5979 L39.9371,288.8885" style="stroke:#181818;stroke-width:0.3097;" fill="none"></path></g><g data-participant="citizen" class="participant participant-head"><text lengthAdjust="spacing" x="144.4067" font-size="8.6712" textLength="29.6548" y="48.308" font-family="sans-serif" fill="#000000">Citizen</text><ellipse cx="161.0923" cy="8.3615" rx="4.955" ry="4.955" style="stroke:#181818;stroke-width:0.3097;" fill="#E2E2F0"></ellipse><path d="M161.0923,13.3165 L161.0923,30.0395 M153.0404,18.2715 L169.1441,18.2715 M161.0923,30.0395 L153.0404,39.3301 M161.0923,30.0395 L169.1441,39.3301" style="stroke:#181818;stroke-width:0.3097;" fill="none"></path></g><g data-participant="citizen" class="participant participant-tail"><text lengthAdjust="spacing" x="144.4067" font-size="8.6712" textLength="29.6548" y="250.6102" font-family="sans-serif" fill="#000000">Citizen</text><ellipse cx="161.0923" cy="257.9199" rx="4.955" ry="4.955" style="stroke:#181818;stroke-width:0.3097;" fill="#E2E2F0"></ellipse><path d="M161.0923,262.8749 L161.0923,279.5979 M153.0404,267.8298 L169.1441,267.8298 M161.0923,279.5979 L153.0404,288.8885 M161.0923,279.5979 L169.1441,288.8885" style="stroke:#181818;stroke-width:0.3097;" fill="none"></path></g><g data-participant="aehr" class="participant participant-head"><rect rx="1.5484" ry="1.5484" width="35.3834" x="220.581" y="30.9686" style="stroke:#181818;stroke-width:0.3097;" fill="#E2E2F0" height="18.765"></rect><text lengthAdjust="spacing" x="224.9166" font-size="8.6712" textLength="26.7122" y="43.353" font-family="sans-serif" fill="#000000">EHR A</text></g><g data-participant="aehr" class="participant participant-tail"><rect rx="1.5484" ry="1.5484" width="35.3834" x="220.581" y="242.5614" style="stroke:#181818;stroke-width:0.3097;" fill="#E2E2F0" height="18.765"></rect><text lengthAdjust="spacing" x="224.9166" font-size="8.6712" textLength="26.7122" y="254.9458" font-family="sans-serif" fill="#000000">EHR A</text></g><g data-participant="helseID" class="participant participant-head"><rect rx="1.5484" ry="1.5484" width="42.0223" x="407.0303" y="30.9686" style="stroke:#181818;stroke-width:0.3097;" fill="#E2E2F0" height="18.765"></rect><text lengthAdjust="spacing" x="411.3659" font-size="8.6712" textLength="33.3511" y="43.353" font-family="sans-serif" fill="#000000">HelseID</text></g><g data-participant="helseID" class="participant participant-tail"><rect rx="1.5484" ry="1.5484" width="42.0223" x="407.0303" y="242.5614" style="stroke:#181818;stroke-width:0.3097;" fill="#E2E2F0" height="18.765"></rect><text lengthAdjust="spacing" x="411.3659" font-size="8.6712" textLength="33.3511" y="254.9458" font-family="sans-serif" fill="#000000">HelseID</text></g><g data-participant="okt" class="participant participant-head"><rect rx="1.5484" ry="1.5484" width="111.5274" x="490.6373" y="30.9686" style="stroke:#181818;stroke-width:0.3097;" fill="#E2E2F0" height="18.765"></rect><text lengthAdjust="spacing" x="494.9729" font-size="8.6712" textLength="102.8562" y="43.353" font-family="sans-serif" fill="#000000">NHN Municipal Services</text></g><g data-participant="okt" class="participant participant-tail"><rect rx="1.5484" ry="1.5484" width="111.5274" x="490.6373" y="242.5614" style="stroke:#181818;stroke-width:0.3097;" fill="#E2E2F0" height="18.765"></rect><text lengthAdjust="spacing" x="494.9729" font-size="8.6712" textLength="102.8562" y="254.9458" font-family="sans-serif" fill="#000000">NHN Municipal Services</text></g><g data-participant="behr" class="participant participant-head"><rect rx="1.5484" ry="1.5484" width="35.4004" x="802.2078" y="30.9686" style="stroke:#181818;stroke-width:0.3097;" fill="#E2E2F0" height="18.765"></rect><text lengthAdjust="spacing" x="806.5434" font-size="8.6712" textLength="26.7292" y="43.353" font-family="sans-serif" fill="#000000">EHR B</text></g><g data-participant="behr" class="participant participant-tail"><rect rx="1.5484" ry="1.5484" width="35.4004" x="802.2078" y="242.5614" style="stroke:#181818;stroke-width:0.3097;" fill="#E2E2F0" height="18.765"></rect><text lengthAdjust="spacing" x="806.5434" font-size="8.6712" textLength="26.7292" y="254.9458" font-family="sans-serif" fill="#000000">EHR B</text></g><g data-participant="healthpersonel" class="participant participant-head"><text lengthAdjust="spacing" x="951.5874" font-size="8.6712" textLength="68.6964" y="48.308" font-family="sans-serif" fill="#000000">Health personel</text><ellipse cx="987.7937" cy="8.3615" rx="4.955" ry="4.955" style="stroke:#181818;stroke-width:0.3097;" fill="#E2E2F0"></ellipse><path d="M987.7937,13.3165 L987.7937,30.0395 M979.7418,18.2715 L995.8455,18.2715 M987.7937,30.0395 L979.7418,39.3301 M987.7937,30.0395 L995.8455,39.3301" style="stroke:#181818;stroke-width:0.3097;" fill="none"></path></g><g data-participant="healthpersonel" class="participant participant-tail"><text lengthAdjust="spacing" x="951.5874" font-size="8.6712" textLength="68.6964" y="250.6102" font-family="sans-serif" fill="#000000">Health personel</text><ellipse cx="987.7937" cy="257.9199" rx="4.955" ry="4.955" style="stroke:#181818;stroke-width:0.3097;" fill="#E2E2F0"></ellipse><path d="M987.7937,262.8749 L987.7937,279.5979 M979.7418,267.8298 L995.8455,267.8298 M987.7937,279.5979 L979.7418,288.8885 M987.7937,279.5979 L995.8455,288.8885" style="stroke:#181818;stroke-width:0.3097;" fill="none"></path></g><g data-participant-1="citizen" data-participant-2="caseworker" class="message"><polygon style="stroke:#181818;stroke-width:0.6194;" fill="#181818" points="38.6983,67.1583,32.5046,69.6358,38.6983,72.1132,36.2208,69.6358"></polygon><line y1="69.6358" x1="34.9821" y2="69.6358" style="stroke:#181818;stroke-width:0.6194;" x2="160.4729"></line><text font-weight="bold" lengthAdjust="spacing" x="42.4146" font-size="8.0518" textLength="5.6025" y="66.4981" font-family="sans-serif" fill="#000000">1</text><text lengthAdjust="spacing" x="50.4945" font-size="8.0518" textLength="106.2622" y="66.4981" font-family="sans-serif" fill="#000000">Request municipal service</text></g><g data-participant-1="caseworker" data-participant-2="aehr" class="message"><polygon style="stroke:#181818;stroke-width:0.6194;" fill="#181818" points="230.8402,85.2023,237.0339,87.6798,230.8402,90.1573,233.3177,87.6798"></polygon><line y1="87.6798" x1="31.8852" y2="87.6798" style="stroke:#181818;stroke-width:0.6194;" x2="234.5565"></line><text font-weight="bold" lengthAdjust="spacing" x="36.2208" font-size="8.0518" textLength="5.6025" y="84.5421" font-family="sans-serif" fill="#000000">2</text><text lengthAdjust="spacing" x="44.3008" font-size="8.0518" textLength="183.4426" y="84.5421" font-family="sans-serif" fill="#000000">Process request and assign municipal service</text></g><g data-participant-1="aehr" data-participant-2="helseID" class="message"><polygon style="stroke:#181818;stroke-width:0.6194;" fill="#181818" points="420.609,103.2463,426.8027,105.7238,420.609,108.2013,423.0865,105.7238"></polygon><line y1="105.7238" x1="238.2727" y2="105.7238" style="stroke:#181818;stroke-width:0.6194;" x2="424.3252"></line><text font-weight="bold" lengthAdjust="spacing" x="242.6083" font-size="8.0518" textLength="5.6025" y="102.5861" font-family="sans-serif" fill="#000000">3</text><text lengthAdjust="spacing" x="250.6882" font-size="8.0518" textLength="166.8239" y="102.5861" font-family="sans-serif" fill="#000000">Authenticate system / fetch access token</text></g><g data-participant-1="aehr" data-participant-2="okt" class="message"><polygon style="stroke:#181818;stroke-width:0.6194;" fill="#181818" points="538.9685,121.2904,545.1622,123.7679,538.9685,126.2454,541.446,123.7679"></polygon><line y1="123.7679" x1="238.2727" y2="123.7679" style="stroke:#181818;stroke-width:0.6194;" x2="542.6848"></line><text font-weight="bold" lengthAdjust="spacing" x="242.6083" font-size="8.0518" textLength="5.6025" y="120.6302" font-family="sans-serif" fill="#000000">4</text><text lengthAdjust="spacing" x="250.6882" font-size="8.0518" textLength="285.1834" y="120.6302" font-family="sans-serif" fill="#000000">POST /services {patient: {Patient}, services: [{Municipal-service}], ..}</text></g><g data-participant-1="okt" data-participant-2="aehr" class="message"><polygon style="stroke:#181818;stroke-width:0.6194;" fill="#181818" points="245.0858,139.3344,238.8921,141.8119,245.0858,144.2894,242.6083,141.8119"></polygon><line y1="141.8119" x1="241.3695" y2="141.8119" style="stroke:#181818;stroke-width:0.6194;stroke-dasharray:2.0,2.0;" x2="545.7816"></line><text font-weight="bold" lengthAdjust="spacing" x="248.802" font-size="8.0518" textLength="5.6025" y="138.6742" font-family="sans-serif" fill="#000000">5</text><text lengthAdjust="spacing" x="256.882" font-size="8.0518" textLength="49.9701" y="138.6742" font-family="sans-serif" fill="#000000">201 Created</text></g><g data-participant-1="healthpersonel" data-participant-2="citizen" class="message"><polygon style="stroke:#181818;stroke-width:0.6194;" fill="#181818" points="167.9054,157.3785,161.7116,159.8559,167.9054,162.3334,165.4279,159.8559"></polygon><line y1="159.8559" x1="164.1891" y2="159.8559" style="stroke:#181818;stroke-width:0.6194;" x2="987.1743"></line><text font-weight="bold" lengthAdjust="spacing" x="171.6216" font-size="8.0518" textLength="5.6025" y="156.7183" font-family="sans-serif" fill="#000000">6</text><text lengthAdjust="spacing" x="179.7015" font-size="8.0518" textLength="247.0709" y="156.7183" font-family="sans-serif" fill="#000000">Treatment with information needed about municipal services</text></g><g data-participant-1="healthpersonel" data-participant-2="behr" class="message"><polygon style="stroke:#181818;stroke-width:0.6194;" fill="#181818" points="826.7211,175.4225,820.5274,177.9,826.7211,180.3775,824.2436,177.9"></polygon><line y1="177.9" x1="823.0048" y2="177.9" style="stroke:#181818;stroke-width:0.6194;" x2="987.1743"></line><text font-weight="bold" lengthAdjust="spacing" x="830.4373" font-size="8.0518" textLength="5.6025" y="174.7623" font-family="sans-serif" fill="#000000">7</text><text lengthAdjust="spacing" x="838.5173" font-size="8.0518" textLength="144.9408" y="174.7623" font-family="sans-serif" fill="#000000">Lookup municipal service for citizen</text></g><g data-participant-1="behr" data-participant-2="helseID" class="message"><polygon style="stroke:#181818;stroke-width:0.6194;" fill="#181818" points="434.8545,193.4665,428.6608,195.944,434.8545,198.4215,432.377,195.944"></polygon><line y1="195.944" x1="431.1383" y2="195.944" style="stroke:#181818;stroke-width:0.6194;" x2="819.2886"></line><text font-weight="bold" lengthAdjust="spacing" x="438.5707" font-size="8.0518" textLength="5.6025" y="192.8063" font-family="sans-serif" fill="#000000">8</text><text lengthAdjust="spacing" x="446.6507" font-size="8.0518" textLength="166.8239" y="192.8063" font-family="sans-serif" fill="#000000">Authenticate system / fetch access token</text></g><g data-participant-1="behr" data-participant-2="okt" class="message"><polygon style="stroke:#181818;stroke-width:0.6194;" fill="#181818" points="553.2141,211.5106,547.0204,213.9881,553.2141,216.4655,550.7366,213.9881"></polygon><line y1="213.9881" x1="549.4978" y2="213.9881" style="stroke:#181818;stroke-width:0.6194;" x2="819.2886"></line><text font-weight="bold" lengthAdjust="spacing" x="556.9303" font-size="8.0518" textLength="5.6025" y="210.8504" font-family="sans-serif" fill="#000000">9</text><text lengthAdjust="spacing" x="565.0103" font-size="8.0518" textLength="106.4194" y="210.8504" font-family="sans-serif" fill="#000000">GET /services/{patient-id}</text></g><g data-participant-1="okt" data-participant-2="behr" class="message"><polygon style="stroke:#181818;stroke-width:0.6194;" fill="#181818" points="812.4755,229.5546,818.6692,232.0321,812.4755,234.5096,814.953,232.0321"></polygon><line y1="232.0321" x1="546.401" y2="232.0321" style="stroke:#181818;stroke-width:0.6194;stroke-dasharray:2.0,2.0;" x2="816.1918"></line><text font-weight="bold" lengthAdjust="spacing" x="550.7366" font-size="8.0518" textLength="11.2049" y="228.8944" font-family="sans-serif" fill="#000000">10</text><text lengthAdjust="spacing" x="564.419" font-size="8.0518" textLength="244.9597" y="228.8944" font-family="sans-serif" fill="#000000">200 OK {patient: {Patient}, services: [{Municipal-service}]}</text></g></g></svg>
 
-<p>Looking up all services of one type to analyze distribution of services in a municipality.</p>
+<h3 id="looking-up-all-services-of-type">Looking up all services of type</h3>
+<p>Sequence describes lookup of all services of one particular type to analyze distribution of services in a municipality.</p>
 <svg xmlns="http://www.w3.org/2000/svg" contentStyleType="text/css" viewBox="0 0 1026 327" zoomAndPan="magnify" data-diagram-type="SEQUENCE" preserveAspectRatio="none" width="1026px" xmlns:xlink="http://www.w3.org/1999/xlink" style="width:1026px;height:327px;background:#FFFFFF;" version="1.1" height="327px"><defs></defs><g><g><title>Case worker</title><rect width="8" x="47.48" y="81.2969" fill="#000000" fill-opacity="0.00000" height="165.6641"></rect><line y1="81.2969" x1="51" y2="246.9609" style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x2="51"></line></g><g><title>Citizen</title><rect width="8" x="256.0898" y="81.2969" fill="#000000" fill-opacity="0.00000" height="165.6641"></rect><line y1="81.2969" x1="259.1504" y2="246.9609" style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x2="259.1504"></line></g><g><title>Health administrator</title><rect width="8" x="368.5825" y="81.2969" fill="#000000" fill-opacity="0.00000" height="165.6641"></rect><line y1="81.2969" x1="372.0293" y2="246.9609" style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x2="372.0293"></line></g><g><title>EHR</title><rect width="8" x="675.6953" y="81.2969" fill="#000000" fill-opacity="0.00000" height="165.6641"></rect><line y1="81.2969" x1="679.145" y2="246.9609" style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x2="679.145"></line></g><g><title>HelseID</title><rect width="8" x="982.0845" y="81.2969" fill="#000000" fill-opacity="0.00000" height="165.6641"></rect><line y1="81.2969" x1="985.1611" y2="246.9609" style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x2="985.1611"></line></g><g data-participant="caseworker" class="participant participant-head"><text lengthAdjust="spacing" x="5" font-size="14" textLength="86.96" y="77.9951" font-family="sans-serif" fill="#000000">Case worker</text><ellipse cx="51.48" cy="13.5" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" fill="#E2E2F0"></ellipse><path d="M51.48,21.5 L51.48,48.5 M38.48,29.5 L64.48,29.5 M51.48,48.5 L38.48,63.5 M51.48,48.5 L64.48,63.5" style="stroke:#181818;stroke-width:0.5;" fill="none"></path></g><g data-participant="caseworker" class="participant participant-tail"><text lengthAdjust="spacing" x="5" font-size="14" textLength="86.96" y="258.9561" font-family="sans-serif" fill="#000000">Case worker</text><ellipse cx="51.48" cy="270.7578" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" fill="#E2E2F0"></ellipse><path d="M51.48,278.7578 L51.48,305.7578 M38.48,286.7578 L64.48,286.7578 M51.48,305.7578 L38.48,320.7578 M51.48,305.7578 L64.48,320.7578" style="stroke:#181818;stroke-width:0.5;" fill="none"></path></g><g data-participant="citizen" class="participant participant-head"><text lengthAdjust="spacing" x="233.1504" font-size="14" textLength="47.8789" y="77.9951" font-family="sans-serif" fill="#000000">Citizen</text><ellipse cx="260.0898" cy="13.5" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" fill="#E2E2F0"></ellipse><path d="M260.0898,21.5 L260.0898,48.5 M247.0898,29.5 L273.0898,29.5 M260.0898,48.5 L247.0898,63.5 M260.0898,48.5 L273.0898,63.5" style="stroke:#181818;stroke-width:0.5;" fill="none"></path></g><g data-participant="citizen" class="participant participant-tail"><text lengthAdjust="spacing" x="233.1504" font-size="14" textLength="47.8789" y="258.9561" font-family="sans-serif" fill="#000000">Citizen</text><ellipse cx="260.0898" cy="270.7578" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" fill="#E2E2F0"></ellipse><path d="M260.0898,278.7578 L260.0898,305.7578 M247.0898,286.7578 L273.0898,286.7578 M260.0898,305.7578 L247.0898,320.7578 M260.0898,305.7578 L273.0898,320.7578" style="stroke:#181818;stroke-width:0.5;" fill="none"></path></g><g data-participant="administrator" class="participant participant-head"><text lengthAdjust="spacing" x="297.0293" font-size="14" textLength="145.1064" y="77.9951" font-family="sans-serif" fill="#000000">Health administrator</text><ellipse cx="372.5825" cy="13.5" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" fill="#E2E2F0"></ellipse><path d="M372.5825,21.5 L372.5825,48.5 M359.5825,29.5 L385.5825,29.5 M372.5825,48.5 L359.5825,63.5 M372.5825,48.5 L385.5825,63.5" style="stroke:#181818;stroke-width:0.5;" fill="none"></path></g><g data-participant="administrator" class="participant participant-tail"><text lengthAdjust="spacing" x="297.0293" font-size="14" textLength="145.1064" y="258.9561" font-family="sans-serif" fill="#000000">Health administrator</text><ellipse cx="372.5825" cy="270.7578" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" fill="#E2E2F0"></ellipse><path d="M372.5825,278.7578 L372.5825,305.7578 M359.5825,286.7578 L385.5825,286.7578 M372.5825,305.7578 L359.5825,320.7578 M372.5825,305.7578 L385.5825,320.7578" style="stroke:#181818;stroke-width:0.5;" fill="none"></path></g><g data-participant="aehr" class="participant participant-head"><rect rx="2.5" ry="2.5" width="43.1006" x="658.145" y="50" style="stroke:#181818;stroke-width:0.5;" fill="#E2E2F0" height="30.2969"></rect><text lengthAdjust="spacing" x="665.145" font-size="14" textLength="29.1006" y="69.9951" font-family="sans-serif" fill="#000000">EHR</text></g><g data-participant="aehr" class="participant participant-tail"><rect rx="2.5" ry="2.5" width="43.1006" x="658.145" y="245.9609" style="stroke:#181818;stroke-width:0.5;" fill="#E2E2F0" height="30.2969"></rect><text lengthAdjust="spacing" x="665.145" font-size="14" textLength="29.1006" y="265.9561" font-family="sans-serif" fill="#000000">EHR</text></g><g data-participant="helseID" class="participant participant-head"><rect rx="2.5" ry="2.5" width="67.8467" x="952.1611" y="50" style="stroke:#181818;stroke-width:0.5;" fill="#E2E2F0" height="30.2969"></rect><text lengthAdjust="spacing" x="959.1611" font-size="14" textLength="53.8467" y="69.9951" font-family="sans-serif" fill="#000000">HelseID</text></g><g data-participant="helseID" class="participant participant-tail"><rect rx="2.5" ry="2.5" width="67.8467" x="952.1611" y="245.9609" style="stroke:#181818;stroke-width:0.5;" fill="#E2E2F0" height="30.2969"></rect><text lengthAdjust="spacing" x="959.1611" font-size="14" textLength="53.8467" y="265.9561" font-family="sans-serif" fill="#000000">HelseID</text></g><g data-participant-1="citizen" data-participant-2="caseworker" class="message"><polygon style="stroke:#181818;stroke-width:1;" fill="#181818" points="62.48,108.4297,52.48,112.4297,62.48,116.4297,58.48,112.4297"></polygon><line y1="112.4297" x1="56.48" y2="112.4297" style="stroke:#181818;stroke-width:1;" x2="259.0898"></line><text font-weight="bold" lengthAdjust="spacing" x="68.48" font-size="13" textLength="9.0454" y="107.3638" font-family="sans-serif" fill="#000000">1</text><text lengthAdjust="spacing" x="81.5254" font-size="13" textLength="171.5645" y="107.3638" font-family="sans-serif" fill="#000000">Request municipal service</text></g><g data-participant-1="caseworker" data-participant-2="aehr" class="message"><polygon style="stroke:#181818;stroke-width:1;" fill="#181818" points="667.6953,137.5625,677.6953,141.5625,667.6953,145.5625,671.6953,141.5625"></polygon><line y1="141.5625" x1="51.48" y2="141.5625" style="stroke:#181818;stroke-width:1;" x2="673.6953"></line><text font-weight="bold" lengthAdjust="spacing" x="58.48" font-size="13" textLength="9.0454" y="136.4966" font-family="sans-serif" fill="#000000">2</text><text lengthAdjust="spacing" x="71.5254" font-size="13" textLength="296.1753" y="136.4966" font-family="sans-serif" fill="#000000">Process request and assign municipal service</text></g><g data-participant-1="aehr" data-participant-2="helseID" class="message"><polygon style="stroke:#181818;stroke-width:1;" fill="#181818" points="974.0845,166.6953,984.0845,170.6953,974.0845,174.6953,978.0845,170.6953"></polygon><line y1="170.6953" x1="679.6953" y2="170.6953" style="stroke:#181818;stroke-width:1;" x2="980.0845"></line><text font-weight="bold" lengthAdjust="spacing" x="686.6953" font-size="13" textLength="9.0454" y="165.6294" font-family="sans-serif" fill="#000000">3</text><text lengthAdjust="spacing" x="699.7407" font-size="13" textLength="269.3438" y="165.6294" font-family="sans-serif" fill="#000000">Authenticate system / fetch access token</text></g><g data-participant-1="administrator" data-participant-2="aehr" class="message"><polygon style="stroke:#181818;stroke-width:1;" fill="#181818" points="667.6953,195.8281,677.6953,199.8281,667.6953,203.8281,671.6953,199.8281"></polygon><line y1="199.8281" x1="372.5825" y2="199.8281" style="stroke:#181818;stroke-width:1;" x2="673.6953"></line><text font-weight="bold" lengthAdjust="spacing" x="379.5825" font-size="13" textLength="9.0454" y="194.7622" font-family="sans-serif" fill="#000000">4</text><text lengthAdjust="spacing" x="392.6279" font-size="13" textLength="248.0029" y="194.7622" font-family="sans-serif" fill="#000000">Search for municipal service of type X</text></g><g data-participant-1="aehr" data-participant-2="administrator" class="message"><polygon style="stroke:#181818;stroke-width:1;" fill="#181818" points="383.5825,224.9609,373.5825,228.9609,383.5825,232.9609,379.5825,228.9609"></polygon><line y1="228.9609" x1="377.5825" y2="228.9609" style="stroke:#181818;stroke-width:1;stroke-dasharray:2.0,2.0;" x2="678.6953"></line><text font-weight="bold" lengthAdjust="spacing" x="389.5825" font-size="13" textLength="9.0454" y="223.895" font-family="sans-serif" fill="#000000">5</text><text lengthAdjust="spacing" x="402.6279" font-size="13" textLength="270.0674" y="223.895" font-family="sans-serif" fill="#000000">200 OK {services: [{Municipal-service}]}</text></g></g></svg>
 
 
@@ -220,7 +345,7 @@ Services are classified by a service code as described by the Norwegian Director
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://labs.oslo.kommune.no/">Oslo Origo - Oslo kommune</a>.  Package hl7.fhir.no.municipal#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jun 3, 2025 11:05+0000">2025-06-03</span>
+          IG &copy; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://labs.oslo.kommune.no/">Oslo Origo - Oslo kommune</a>.  Package hl7.fhir.no.municipal#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jun 11, 2025 10:24+0000">2025-06-11</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

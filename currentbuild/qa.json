@@ -6,14 +6,14 @@
   "status" : "draft",
   "package-id" : "hl7.fhir.no.municipal",
   "ig-ver" : "0.2.0",
-  "date" : "Tue, 03 Jun, 2025 11:05:48 +0000",
-  "dateISO8601" : "2025-06-03T11:05:48+00:00",
+  "date" : "Wed, 11 Jun, 2025 10:24:32 +0000",
+  "dateISO8601" : "2025-06-11T10:24:32+00:00",
   "errs" : 11,
   "warnings" : 35,
-  "hints" : 2,
+  "hints" : 1,
   "suppressed-hints" : 0,
   "suppressed-warnings" : 0,
   "version" : "4.0.1",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 909577728
+  "maxMemory" : 1270627296
 }

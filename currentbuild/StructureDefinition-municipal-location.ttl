@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "MunicipalLocation"] ; # 
   fhir:title [ fhir:v "municipal-location"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-06-03T11:05:03+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-06-11T10:23:46+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Oslo Origo - Oslo kommune"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Oslo Origo - Oslo kommune" ] ;
